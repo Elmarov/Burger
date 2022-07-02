@@ -1,0 +1,15 @@
+@mixin circle($width,$color) {
+    width: $width;
+    height: $width;
+    -webkit-border-radius: $width/2;
+    -moz-border-radius: $width/2;
+    -ms-border-radius: $width/2;
+    -o-border-radius: $width/2;
+    border-radius: $width/2;
+    background-color: $color;
+}
+
+//respon
+@function rem($px){
+@return $px / 16px+0rem;
+}

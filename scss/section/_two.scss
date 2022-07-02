@@ -1,0 +1,57 @@
+.section__two{
+    background-image: url('../img/bg/two_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    // position: relative;
+}
+.container {
+}
+.two__container {
+    position: relative;
+    top: 108px;
+    gap: 50px;
+}
+.section__title--black{
+    color:$dark;
+}
+
+.list__two-content {
+    display: flex;
+    box-sizing: border-box;
+    // border: 1px solid red;
+}
+.item__two-content {
+    width: 33.33%;
+    display: block;
+    // border: 1px solid blue;
+}
+.list__block-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    gap: 20px;
+}
+.item__block-content {
+    text-align: center;
+}
+.block-content__title {
+    font-family:"lifehack";
+font-size: rem(24.2px);
+line-height: 28px;
+font-weight: 500;
+letter-spacing: -0.025em;
+color:$dark;
+
+}
+.block-content__text {
+    opacity: 0.8;
+font-family: "ubuntulight";
+font-size: 14.1px;
+line-height: 24px;
+font-weight: 300;
+color: #2f3234;
+text-align: center;
+}

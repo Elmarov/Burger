@@ -1,0 +1,18 @@
+
+///config
+
+@import "config/_variables.scss";
+@import "config/_mixin.scss";
+
+//base
+@import "layot/_font.scss";
+@import "layot/_base.scss";
+@import "layot/_adjastment.scss";
+
+
+
+
+//section
+
+@import "section/one";
+@import "section/two";
