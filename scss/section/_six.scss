@@ -1,19 +1,123 @@
-
-
-.section {
-}
+// .section {
+// }
 .section__six {
+    // height: 100%;
+    width: 100%;
+    // min-height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // padding-bottom: 10%;
+    // margin-bottom: 17%;
 }
 .block-photos {
+    padding: 0;
+    margin: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    .block-photo:nth-child(1) {
+        background: url("../img/six/Rectangle 3-7.jpg") center no-repeat;
+        background-size: cover;
+    }
+    .block-photo:nth-child(2) {
+        background: url("../img/six/Rectangle 3-5.jpg") center no-repeat;
+        background-size: cover;
+    }
+    .block-photo:nth-child(3) {
+        background: url("../img/six/Rectangle 3-3.jpg") center no-repeat;
+        background-size: cover;
+    }
+    .block-photo:nth-child(4) {
+        background: url("../img/six/Rectangle 3-1.jpg") center no-repeat;
+        background-size: cover;
+    }
+    .block-photo:nth-child(5) {
+        background: url("../img/six/Rectangle 3-6.jpg") center no-repeat;
+        background-size: cover;
+    }
+    .block-photo:nth-child(6) {
+        background: url("../img/six/Rectangle 3-4.jpg") center no-repeat;
+        background-size: cover;
+    }
+    .block-photo:nth-child(7) {
+        background: url("../img/six/Rectangle 3-2.jpg") center no-repeat;
+        background-size: cover;
+    }
+    .block-photo:nth-child(8) {
+        background: url("../img/six/Rectangle 3.jpg") center no-repeat;
+        background-size: cover;
+    }
 }
 .block-photo {
-    flex-basis: 25%;
+    border: 1px solid green;
+    display: flex;
+    flex: 1 1 25%;
+    //z-index: 2;
+    position: relative;
+
+    &:hover {
+        .block-coment {
+            opacity: 1;
+        }
+    }
 }
+
+.block-coment {
+    padding-top: 37px;
+    padding-right: 30px;
+    padding-left: 17px;
+    padding-bottom: 50px;
+    //padding: 20px;
+    background: rgba(20, 20, 20, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    //  z-index: 1;
+
+    transition: all 0.7s;
+}
+
 .block-photo__img {
     width: 100%;
-    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.block-coment__name {
+    margin: 0;
+    padding: 0;
+    font-family: Gagalin;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-bottom: 18px;
+}
+.block-coment__text {
+    font-family: Ubuntu;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 12px;
+    // padding-bottom: 20px;
+}
+.block-coment__linck {
+    width: 110px;
+    height: 35px;
+    background-color: #2f3234;
+    &:hover{
+        background: rgba(20,20,20,0.7);
+    }
 }
