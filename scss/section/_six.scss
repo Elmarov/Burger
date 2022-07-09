@@ -52,7 +52,7 @@
     }
 }
 .block-photo {
-    border: 1px solid green;
+    // border: 1px solid green;
     display: flex;
     flex: 1 1 25%;
     //z-index: 2;
@@ -97,7 +97,7 @@
 .block-coment__name {
     margin: 0;
     padding: 0;
-    font-family: Gagalin;
+    font-family:" Gagalin";
     font-size: 14px;
     line-height: 28px;
     font-weight: 400;
@@ -105,7 +105,7 @@
     padding-bottom: 18px;
 }
 .block-coment__text {
-    font-family: Ubuntu;
+    font-family: "ubuntulight";
     font-size: 14px;
     line-height: 24px;
     font-weight: 300;
