@@ -2,7 +2,51 @@
     background: url(../img/bg/bg__faif.jpg) center no-repeat;
     background-size: cover;
 }
-.container__five {
 
-    
+.container__five {
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid red;
+    height: 100vh;
+}
+.title__burger--white {
+    color: #fff;
+}
+.list__harmonic {
+    // transform: rotate(-90deg);
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+    flex-wrap: nowrap;
+}
+.item__harmonic {
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: 100vh;
+    height: 80px;
+    border: 1px solid green;
+    font-family: "Gagalin";
+    font-size: 40px;
+    // line-height: 64px;
+    font-weight: 400;
+    color: #ffffff;
+    // transform: rotate(-90deg);
+    // transform-origin: top left;
+
+    span{
+        transform: rotate(-90deg);
+    }
+    &:nth-child(1) {
+        background: url("../img/faif/burger-ak1.jpg") center no-repeat;
+        background-size: cover;
+    }
+    &:nth-child(2) {
+        background: url("../img/faif/burger-ak2.jpg") center no-repeat;
+        background-size: cover;
+    }
+    &:nth-child(3) {
+        background: url("../img/faif/burger-ak3.jpg") center no-repeat;
+        background-size: cover;
+    }
 }
