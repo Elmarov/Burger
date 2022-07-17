@@ -5,8 +5,7 @@
     background-position: bottom;
     // position: relative;
 }
-.container {
-}
+
 .two__container {
     position: relative;
     top: 108px;
@@ -36,7 +35,14 @@
 }
 .item__block-content {
     text-align: center;
+   
+    svg polygon{
+
+        fill:#333;
+    }
+
 }
+
 .block-content__title {
     font-family:"lifehack";
 font-size: rem(24.2px);

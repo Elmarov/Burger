@@ -5,48 +5,83 @@
 
 .container__five {
     flex-direction: row;
+    // position: relative;
     justify-content: space-between;
-    border: 1px solid red;
+    // border: 1px solid red;
     height: 100vh;
+    width: 100%;
 }
 .title__burger--white {
     color: #fff;
+    margin-left: 93px;
+    margin-top: -395px;
+    // position: absolute;
+    // top: 50px;
 }
+
+
+
+
+
 .list__harmonic {
-    // transform: rotate(-90deg);
-    // height: 100%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid blue;
-    flex-wrap: nowrap;
+    height: 100%;
+    width: 70%;
+display: flex;
+justify-content: flex-end;
+align-items: start;
+flex-direction: row;
+   background: transparent;
+   
+    // border: 1px solid blue;
+   
+  
 }
 .item__harmonic {
-    display: flex;
+  display: flex;
+    width: 80px;
+    min-height: 100%;
+    justify-content: center;
+    align-items: end;
     flex-wrap: nowrap;
-    min-width: 100vh;
-    height: 80px;
-    border: 1px solid green;
+    // border: 1px solid green;
+    // background: gold;
     font-family: "Gagalin";
-    font-size: 40px;
-    // line-height: 64px;
+//    font-size: 24px;
     font-weight: 400;
     color: #ffffff;
+    padding-bottom: 140px;
     // transform: rotate(-90deg);
-    // transform-origin: top left;
+   
 
     span{
+        padding: 0;
+        margin: 0;
         transform: rotate(-90deg);
+        display:inline;
+        white-space: nowrap;
+        font-size: 40px;
+        line-height: 64px;
     }
+
     &:nth-child(1) {
         background: url("../img/faif/burger-ak1.jpg") center no-repeat;
         background-size: cover;
+        //  width: 80px;
+        
     }
+
     &:nth-child(2) {
         background: url("../img/faif/burger-ak2.jpg") center no-repeat;
         background-size: cover;
+        padding-bottom: 154px;
+        //  width: 80px;
     }
+
+
     &:nth-child(3) {
         background: url("../img/faif/burger-ak3.jpg") center no-repeat;
         background-size: cover;
+        //  width: 80px;
+        padding-bottom: 125px;
     }
 }

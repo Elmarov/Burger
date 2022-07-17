@@ -86,7 +86,6 @@ ul {
 .wrapper {
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
 }
 
 * {
@@ -340,6 +339,10 @@ ul {
   text-align: center;
 }
 
+.item__block-content svg polygon {
+  fill: #333;
+}
+
 .block-content__title {
   font-family: "lifehack";
   font-size: 1.5125rem;
@@ -373,10 +376,137 @@ ul {
 .section__four {
   background: url(../img/bg/bg__four.jpg) center no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container__four {
+  width: 50%;
+  min-height: 650px;
+  margin: 0 0 0 auto;
+  background-color: #2f3234;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.block__title {
+  border: 1px solid green;
+  height: 25%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.four__title {
+  font-family: "Gagalin";
+  font-size: 72.1px;
+  line-height: 64px;
+  font-weight: 400;
+  right: 20px;
+}
+
+.list__pipl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 97px;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+}
+
+.item__pipl {
+  color: #fff;
+  margin-bottom: 31px;
+}
+
+.item__pipl:last-child {
+  margin-bottom: 0;
+}
+
+.pipl__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pipl__img {
+  border-radius: 50%;
+  max-width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #000;
+}
+
+.pipl__img img {
+  display: block;
+  max-width: 100%;
   height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+
+.pipl__text {
+  width: 210px;
+  font-family: Ubuntu;
+  font-size: 14.1px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-left: 21px;
+}
+
+.subtitle {
+  font-family: "Ubuntu";
+  font-size: 14.1px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.pipl__text-coment {
+  font-weight: 300;
+}
+
+details {
+  -webkit-transition: all .7s;
+  transition: all .7s;
+}
+
+summary {
+  font-family: "Gagalin";
+  font-size: 14.1px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 .section__five {
@@ -392,45 +522,64 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid red;
   height: 100vh;
+  width: 100%;
 }
 
 .title__burger--white {
   color: #fff;
+  margin-left: 93px;
+  margin-top: -395px;
 }
 
 .list__harmonic {
+  height: 100%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: 1px solid blue;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: transparent;
 }
 
 .item__harmonic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 80px;
+  min-height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  min-width: 100vh;
-  height: 80px;
-  border: 1px solid green;
   font-family: "Gagalin";
-  font-size: 40px;
   font-weight: 400;
   color: #ffffff;
+  padding-bottom: 140px;
 }
 
 .item__harmonic span {
+  padding: 0;
+  margin: 0;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+  display: inline;
+  white-space: nowrap;
+  font-size: 40px;
+  line-height: 64px;
 }
 
 .item__harmonic:nth-child(1) {
@@ -441,11 +590,13 @@ ul {
 .item__harmonic:nth-child(2) {
   background: url("../img/faif/burger-ak2.jpg") center no-repeat;
   background-size: cover;
+  padding-bottom: 154px;
 }
 
 .item__harmonic:nth-child(3) {
   background: url("../img/faif/burger-ak3.jpg") center no-repeat;
   background-size: cover;
+  padding-bottom: 125px;
 }
 
 .section__six {
