@@ -1,22 +1,20 @@
 .wrapper {
+    position: relative;
     width: 100%;
     height: 100%;
-
-    // overflow-x: hidden;
+    min-width: 940px;
+    // overflow: hidden;
 }
 
- 
-
-*{
+* {
     box-sizing: border-box;
 }
 .maincontent {
     height: 100%;
     min-height: 650px;
-    
 }
 .container {
-    width: 940px;
+    max-width: 940px;
     height: 100%;
     min-height: 650px;
     margin: 0 auto;
@@ -32,6 +30,7 @@
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.31);
     border-bottom: 1px solid red;
+    overflow: hidden;
 }
 .order-link {
     min-width: 98px;

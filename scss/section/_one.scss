@@ -5,9 +5,9 @@
     background-position: center;
     // position: relative;
 }
-.one__container{
-    height: 100%;
-}
+// .one__container{
+//     height: 100%;
+// }
 .header {
     width: 100%;
     display: flex;
@@ -67,6 +67,9 @@
         text-decoration: underline;
     }
 }
+.header__btn{
+    padding-right: 25px;
+}
 
 // ====================
 .one__content {
@@ -82,6 +85,10 @@
     // border:1px solid red;
     display: block;
    flex-basis: 50%;
+
+   img{
+    max-width: 100%;
+   }
 }
 .one__discription {
     // border:1px solid blue;
