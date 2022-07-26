@@ -305,7 +305,7 @@ ul {
 
 .two__container {
   position: relative;
-  top: 108px;
+  top: -20px;
   gap: 50px;
 }
 
@@ -348,8 +348,29 @@ ul {
   text-align: center;
 }
 
-.item__block-content svg polygon {
-  fill: #333;
+.icon {
+  height: 97px;
+  width: 89px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.icon:hover {
+  fill: aqua;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.icon-meat {
+  fill: #e25028;
+}
+
+.icon-hand {
+  fill: #f8b43a;
+}
+
+.icon-natural {
+  fill: #8ac03e;
 }
 
 .block-content__title {
@@ -402,11 +423,13 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .block__title {
-  border: 1px solid green;
-  height: 25%;
+  height: 37%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,10 +448,12 @@ ul {
   font-size: 72.1px;
   line-height: 64px;
   font-weight: 400;
-  right: 20px;
+  right: 80px;
 }
 
-.list__pipl {
+.list__coment {
+  width: 70%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,86 +461,95 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 97px;
-  -webkit-transition: all .7s;
-  transition: all .7s;
+  gap: 20px;
 }
 
-.item__pipl {
-  color: #fff;
-  margin-bottom: 31px;
-}
-
-.item__pipl:last-child {
-  margin-bottom: 0;
-}
-
-.pipl__box {
+.item__coment-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.pipl__img {
-  border-radius: 50%;
-  max-width: 100px;
-  height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  gap: 9px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #000;
-}
-
-.pipl__img img {
-  display: block;
-  max-width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
-}
-
-.pipl__text {
-  width: 210px;
-  font-family: Ubuntu;
-  font-size: 14.1px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #ffffff;
-  margin-left: 21px;
-}
-
-.subtitle {
-  font-family: "Ubuntu";
-  font-size: 14.1px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.pipl__text-coment {
-  font-weight: 300;
-}
-
-details {
-  -webkit-transition: all .7s;
-  transition: all .7s;
-}
-
-summary {
   font-family: "Gagalin";
   font-size: 14.1px;
   line-height: 28px;
   font-weight: 400;
   color: #ffffff;
+}
+
+.item__coment-link::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-width: 0;
+  border-top-color: #f9b43b;
+}
+
+.four__coment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0;
+  overflow: hidden;
+}
+
+.item__coment--activ .item__coment-link {
+  color: #f9b43b;
+}
+
+.item__coment--activ .item__coment-link::before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.item__coment--activ .four__coment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 35px;
+  height: 100%;
+}
+
+.four__coment-img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.four__coment-ava {
+  border-radius: 50%;
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 50%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+
+.four__coment-text {
+  color: #ffffff;
+  font-family: "Ubuntu";
+  font-size: 14.1px;
+  line-height: 24px;
+}
+
+.four__coment-subtitle {
+  font-family: "ubuntubold";
+  font-weight: 700;
+}
+
+.four__coment-message {
+  font-weight: 300;
 }
 
 .section__five {
