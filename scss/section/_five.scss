@@ -5,9 +5,9 @@
 
 .container__five {
     flex-direction: row;
-    // position: relative;
+
     justify-content: space-between;
-    // border: 1px solid red;
+
     height: 100vh;
     min-width: 100%;
 }
@@ -15,73 +15,129 @@
     color: #fff;
     margin-left: 93px;
     margin-top: -395px;
-    // position: absolute;
-    // top: 50px;
+  
 }
-
-
-
-
 
 .list__harmonic {
     height: 100%;
-    width: 70%;
-display: flex;
-justify-content: flex-end;
-align-items: start;
-flex-direction: row;
-   background: transparent;
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    flex-direction: row;
    
-    // border: 1px solid blue;
-   
-  
 }
+
 .item__harmonic {
-  display: flex;
-    width: 80px;
-    min-height: 100%;
-    justify-content: center;
-    align-items: end;
+    transition: all 0.8s ease;
+    display: flex;
+
+    height: 100%;
+
     flex-wrap: nowrap;
-    // border: 1px solid green;
-    // background: gold;
+
     font-family: "Gagalin";
-//    font-size: 24px;
+
     font-weight: 400;
     color: #ffffff;
-    padding-bottom: 140px;
-    // transform: rotate(-90deg);
-   
+    transition: all 1.5s;
 
-    span{
-        padding: 0;
-        margin: 0;
-        transform: rotate(-90deg);
-        display:inline;
-        white-space: nowrap;
-        font-size: 40px;
-        line-height: 64px;
+    &:hover {
+        .box-text {
+            display: block;
+            
+        }
+        .box-title {
+            span {
+                color: $yellow;
+            }
+        }
+    }
+
+    .box-title {
+        max-height: 100%;
+        width: 80px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            padding: 0;
+            margin: 0;
+            transform: rotate(-90deg);
+            transform-origin: center;
+            display: block;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            white-space: nowrap;
+            font-size: 40px;
+            position: relative;
+            top: 140px;
+        }
+    }
+    .box-text {
+        max-width: 540px;
+        display: flex;
+        padding: 62px 35px;
+        opacity: 0.92;
+        background-color: #2f3234;
+        font-family: "ubuntulight";
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        // height: 0;
+        // width: 0;
+        // overflow: hidden;
+        display: none;
+    }
+
+    .item__harmonic--activ {
+        .box-text {
+            max-width: 540px;
+            height: 100%;
+            flex: 1;
+            padding: 62px 35px;
+            overflow: visible;
+            height: 100%;
+            width: 100%;
+
+            p {
+                color: #fff;
+            }
+        }
     }
 
     &:nth-child(1) {
-        background: url("../img/faif/burger-ak1.jpg") center no-repeat;
-        background-size: cover;
+        // background: url("../img/faif/burger-ak1.jpg") center no-repeat;
+        // background-size: cover;
         //  width: 80px;
-        
+        .box-title {
+            background: url("../img/faif/burger-ak1.jpg") center no-repeat;
+            background-size: cover;
+        }
     }
 
     &:nth-child(2) {
-        background: url("../img/faif/burger-ak2.jpg") center no-repeat;
-        background-size: cover;
-        padding-bottom: 154px;
+        .box-title {
+            background: url("../img/faif/burger-ak2.jpg") center no-repeat;
+            background-size: cover;
+            span{
+                top: 130px;
+            }
+        }
         //  width: 80px;
     }
 
-
     &:nth-child(3) {
-        background: url("../img/faif/burger-ak3.jpg") center no-repeat;
-        background-size: cover;
-        //  width: 80px;
-        padding-bottom: 125px;
+        .box-title {
+            background: url("../img/faif/burger-ak3.jpg") center no-repeat;
+            background-size: cover;
+            span{
+                top: 160px;
+            }
+        }
     }
 }

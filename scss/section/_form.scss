@@ -1,0 +1,174 @@
+.section__form {
+    background: url("../img/form_bg.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.container__form {
+    // border: 1px solid red;
+    justify-content: start;
+    gap: 150px;
+}
+.section__title-form {
+    top: 120px;
+
+    // border: 1px solid green;
+}
+.form {
+    flex: 1;
+    // border: 1px solid blue;
+    width: 100%;
+    display: flex;
+    gap: 1.25rem;
+}
+.block-input {
+    // border: 1px solid red;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    gap: 22px;
+    label {
+        height: fit-content;
+        width: min-content;
+        color: #fff;
+        font-family: Ubuntu;
+        font-size: 14px;
+        // line-height: 24px;
+        font-weight: 300;
+        display: flex;
+        flex-direction: column;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+}
+
+.block-btn {
+    // border: 1px solid purple;
+    width: 50%;
+}
+
+// .input:active{
+//     border-color: $yellow;
+// }
+
+.input {
+    border: none;
+    padding: 12px 20px;
+    @include input;
+
+    // margin-bottom: 20px;
+
+    &:active {
+        border-color: $yellow;
+    }
+
+    &-long {
+        @include input(462px);
+        // min-width: 100%;
+    }
+    &-little {
+        @include input(460px / 5);
+    }
+}
+
+.block-btn {
+    font-family: Ubuntu;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.label-text {
+    textarea {
+        min-width: 100%;
+        height: 109px;
+        border: 1px solid #d1cfcb;
+    }
+}
+.label-radio {
+    margin-right: 20px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+
+    input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        &:checked + span::before {
+            //
+            width: 7px;
+            height: 7px;
+            border: 4px solid #fff;
+            background:url("../img/elli_rad.png") center center no-repeat;
+background-size: cover;
+        }
+    }
+    span {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 15px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            // border: 1px solid #6ec413;
+            border-radius: 50%;
+            margin-right: 10px;
+            background: #fff;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50% 50%;
+        }
+    }
+}
+
+.label-chek {
+    span {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-color: #ffffff;
+
+            margin-right: 10px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50% 50%;
+        }
+    }
+
+    input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        &:checked + span::before {
+            width: 15px;
+            height: 15px;
+            // background-color: #fff;
+            background-image: url("../img/che.jpg");
+        }
+    }
+    margin-bottom: 12px;
+}
+.form-btn {
+}
+.order-link {
+}
+.order-link--reset {
+    background: transparent;
+    text-transform: capitalize;
+}

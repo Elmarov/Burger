@@ -17,28 +17,35 @@
 }
 .block__title {
    
-    height: 37%;
+    height: 34%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
 }
 .four__title {
     font-family: "Gagalin";
     font-size: 72.1px;
     line-height: 64px;
     font-weight: 400;
-    right: 80px;
+    right: 83px;
+    top: 5px;
 }
 .list__coment {
     width: 70%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
+    padding-left: 7px;
+    padding-top: 47px;
 }
 .item__coment {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
     
 }
 .item__coment-link {
@@ -68,6 +75,33 @@
 }
 
 .item__coment--activ {
+    // margin-bottom: ;
+
+    .four__coment {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+        // overflow:auto;
+        height: 100%;
+        // border: 1px solid blue;
+        margin-bottom: 20px;
+
+        .four__coment-img {
+            display: block;
+            position: relative;
+            min-width: 110px;
+            height: 101px;
+            left: 8px;
+            top: 7px;
+            // border: 1px solid green;
+            background: url("../img/four/aphex1.png") center center;
+            background-size: cover;
+            border-radius: 50%;
+        }
+    
+    }
+
+   
     .item__coment-link {
         color: $yellow;
 
@@ -75,45 +109,41 @@
             transform: rotate(180deg);
         }
     }
-    .four__coment {
-        display: flex;
-        align-items: center;
-        gap: 35px;
-        // overflow:auto;
-        height: 100%;
-    
-    }
-
-}
-
-
-.four__coment-img {
-    display: block;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
     
 }
 
-.four__coment-ava {
-    border-radius: 50%;
-    max-width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    border-radius: 50%;
-    object-fit: fill;
-    object-position: 50% 50%;
 
-}
+// .four__coment-img {
+//     display: block;
+//     max-width: 100px;
+//     left: 8px;
+//     top: 7px;
+//     border: 1px solid green;
+//     background: url("../img/four/aphex.png") center center;
+//     background-size: cover;
+// }
+
+// .four__coment-ava {
+//     border-radius: 50%;
+//     max-width: 100%;
+//     // height: auto;
+//     margin: 0 auto;
+//     border-radius: 50%;
+//     object-fit: cover;
+//     // object-position: 50% 50%;
+
+// }
 
 
 
 
 .four__coment-text {
+    height: 100%;
     color: #ffffff;
     font-family: "Ubuntu";
     font-size: 14.1px;
     line-height: 24px;
+//    border: 1px solid red;
     // padding-left: 35px;
 }
 
@@ -122,6 +152,7 @@
     // font-size: 14.1px;
     // line-height: 24px;
     font-weight: 700;
+    margin-bottom: 12px;
     
 }
 .four__coment-message {

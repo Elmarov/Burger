@@ -8,6 +8,18 @@
     border-radius: $width/2;
     background-color: $color;
 }
+@mixin input($width:220px,){
+    width:$width;
+    height: 35px;
+    border-radius: 5px;
+    font-family: Ubuntu;
+font-size: 14px;
+line-height: 24px;
+font-weight: 300;
+color: #2f3234;
+    
+// border: 2px solid #f9b43b;
+}
 
 //respon
 @function rem($px){
