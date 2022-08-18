@@ -240,8 +240,8 @@ ul {
   font-weight: 500;
   font-size: 13px;
   line-height: 1.42;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .nav__linck:hover {
@@ -301,6 +301,48 @@ ul {
   font-weight: 500;
   letter-spacing: -0.025em;
   color: #ffffff;
+}
+
+.list-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 20%;
+  right: 45px;
+  gap: 16px;
+  z-index: 5;
+}
+
+.item-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15px;
+  width: 15px;
+}
+
+.item-pagination span {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.item-pagination:hover {
+  border: 1px solid #fff;
+  border-radius: 50%;
 }
 
 .section__two {
@@ -457,6 +499,15 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 5px;
+  -webkit-transition: all 1.8s ease;
+  transition: all 1.8s ease;
+}
+
+.block__icon-burger:hover .list__burger-compound {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  display: block;
+  top: 0;
 }
 
 .block__icon-burger span {
@@ -479,7 +530,13 @@ ul {
 }
 
 .icon-slider {
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
   fill: #fff;
+}
+
+.icon-slider:hover {
+  fill: #2f3234;
 }
 
 .icon-scrol__left {
@@ -628,6 +685,66 @@ ul {
 
 .kkal-c {
   position: absolute;
+}
+
+.list__burger-compound {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  width: 270px;
+  opacity: 0.9;
+  background-color: #ffffff;
+  font-family: "ubuntubold";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #2f3234;
+  position: absolute;
+  left: 90px;
+  top: -9000px;
+}
+
+.list__burger-compound span {
+  color: #2f3234;
+  font-family: "ubuntulight";
+}
+
+.item__compound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+.item__compound-beef {
+  fill: #e25129;
+}
+
+.item__compound-scone {
+  fill: #f8b43a;
+}
+
+.item__compound-salad {
+  fill: #8ac03e;
+}
+
+.item__compound-sauce {
+  fill: #e25129;
+}
+
+.item__compound-veg {
+  fill: #8ac03e;
+}
+
+.item__compound-cheese {
+  fill: #f8b43a;
+}
+
+.icon-compound {
+  width: 44px;
+  height: 39px;
 }
 
 .section__four {

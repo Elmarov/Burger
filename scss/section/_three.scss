@@ -37,6 +37,14 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    transition: all 1.8s ease;
+    &:hover{
+        .list__burger-compound{
+            transition: all .5s ease;
+            display: block;
+            top:0;
+        }
+    }
     span {
         font-family: "Gagalin";
         font-size: 14px;
@@ -57,7 +65,12 @@
     bottom: 20px;
 }
 .icon-slider {
+    transition: all .5s ease-in;
     fill: #fff;
+    &:hover{
+  
+        fill:#2f3234;
+    }
 }
 .icon-scrol__left {
     width: 25px;
@@ -152,7 +165,7 @@
 
 .right-scrol {
     position: relative;
-    left :35px;
+    left: 35px;
     bottom: 19px;
 }
 
@@ -164,7 +177,7 @@
 .kkal {
     position: relative;
     right: 30px;
-    top: 7px;  
+    top: 7px;
     width: 90px;
     height: 90px;
     color: #fff;
@@ -176,4 +189,55 @@
     &-c {
         position: absolute;
     }
+}
+
+.list__burger-compound {
+    transition: all .5s ease;
+    width: 270px;
+    // height: 332px;
+    opacity: 0.9;
+    background-color: #ffffff;
+    font-family: "ubuntubold";
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #2f3234;
+    position: absolute;
+    left: 90px;
+    top:-9000px;
+    // display: none;
+
+    span {
+        color: #2f3234;
+        font-family: "ubuntulight";
+    }
+}
+
+.item__compound {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.item__compound-beef {
+    fill: #e25129;
+}
+.item__compound-scone {
+   fill: #f8b43a;
+}
+.item__compound-salad{
+    fill:#8ac03e;
+}
+.item__compound-sauce {
+    fill: #e25129;
+}
+.item__compound-veg {
+    fill:#8ac03e;
+}
+.item__compound-cheese {
+    fill: #f8b43a;
+}
+.icon-compound{
+    width: 44px;
+    height: 39px;
+    
 }
