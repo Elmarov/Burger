@@ -7,6 +7,9 @@
     list-style: none;
     text-decoration: none;
 }
+
+
+
 @import "config/_variables.scss";
 @import "config/_mixin.scss";
 
@@ -30,3 +33,4 @@
 @import "section/_form";
 @import "section/maps";
 @import "section/footer";
+// @import "section/_media";

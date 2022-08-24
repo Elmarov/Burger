@@ -2,3 +2,12 @@ $orange:#e25028;
 $yellow:#f9b43b;
 $green:#8ac03e;
 $dark:#2f3234;
+
+$containerWidth:940px;
+$fontSize:16px;
+$tablets:768px;
+$phones:480px;
+
+@function rem($px){
+    @return $px / 16px+0rem;
+    }

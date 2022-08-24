@@ -5,15 +5,24 @@
     background-position: center;
     // position: relative;
 }
-// .one__container{
-//     height: 100%;
-// }
+.one__container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    // @include tablets{
+
+       
+    // }
+
+}
 .header {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 6px;
+    padding-top: 0.375rem;
 }
 .header__logo {
     margin-right: auto;
@@ -23,10 +32,14 @@
 // .logo__img {
 // }
 .header__menu {
-    padding-right: 8px;
+    padding-right: 0.5rem;
+
+    @include tablets {
+        display: none;
+    }
 }
 .nav {
-    padding-right: 10px;
+    padding-right: 0.625rem;
 }
 .nav__list {
     display: flex;
@@ -42,8 +55,8 @@
     &::after {
         content: "";
         display: block;
-        @include circle(4px, #fff);
-        margin: 0 16px;
+        @include circle(0.25rem, #fff);
+        margin: 0 1rem;
     }
     &:last-child:after {
         display: none;
@@ -56,7 +69,7 @@
     text-transform: uppercase;
     font-family: "ubunturegular";
     font-weight: 500;
-    font-size: 13px;
+    font-size: 0.8125rem;
     line-height: 1.42;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -68,88 +81,177 @@
     }
 }
 // .header__btn{
-//     // padding-right: 15px;
+//     // padding-right: .9375rem;
 // }
 
 // ====================
 .one__content {
-    // border:1px solid green;
+    // border:.0625rem solid green;
     display: flex;
     // flex-direction: column;
     // flex-wrap: wrap;
     // flex-grow: 1;
     // align-items: center;
     padding-bottom: 19%;
+    @include tablets{
+        width: 100%;
+        padding-bottom: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+       text-align: center;
+    }
 }
 .one__img {
-    // border:1px solid red;
+    // border:.0625rem solid red;
     display: block;
-    flex-basis: 50%;
+    
+    @include tablets{
+        width: 55%;
+        position: relative;
+        bottom: 30px;
+
+    }
+    @include phones{
+        width: 60%;
+    }
+    
 
     img {
         max-width: 100%;
     }
 }
 .one__discription {
-    // border:1px solid blue;
+    // border:.0625rem solid blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 10px;
+    padding-left: 0.625rem;
     flex-basis: 50%;
+
+    @include tablets{
+        position: relative;
+        bottom: 30px;
+    }
 }
 .section__title {
     font-family: Gagalin;
-    font-size: 72px;
-    line-height: 85px;
+    font-size: 4.5rem;
+    line-height: 5.3125rem;
     font-weight: 400;
     color: $yellow;
     margin: 0;
     position: relative;
-    top: 10px;
-    // margin: 0 0 20px 0;
+    top: 0.625rem;
+    // margin: 0 0 1.25rem 0;
 }
 .one__description-text {
     position: relative;
-    top: 30px;
+    top: 1.875rem;
     font-family: Lifehack;
-    font-size: 65px;
-    line-height: 60px;
+    font-size: 4.0625rem;
+    line-height: 3.75rem;
     font-weight: 500;
     letter-spacing: -0.025em;
     color: #ffffff;
+    @include tablets{
+        padding: 0 60px;
+    }
 }
 
 .list-pagination {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 20%;
-    right: 45px;
-    gap: 16px;
+    top: 13%;
+    right: 174px;
+    gap: 13px;
     z-index: 5;
+    @include tablets {
+        display: none;
+    }
 }
 
 .item-pagination {
-    // border: 1px solid #fff;
+    // border: .0625rem solid #fff;
     // border-radius: 50%;
-    // padding: 10px;
+    // padding: .625rem;
     // background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15px;
-    width: 15px;
+    height: 0.9375rem;
+    width: 0.9375rem;
 
-    span{
+    span {
         display: block;
-        @include circle(6px, #fff);
+        @include circle(0.3125rem, #fff);
     }
 
-    &:hover{
-        border: 1px solid #fff;
+    &:hover {
+        border: 0.0625rem solid #fff;
         border-radius: 50%;
-    // height: 10px;
-    // width: 10px;
+        // height: .625rem;
+        // width: .625rem;
     }
 }
+
+.burger-menu {
+    height: 27px;
+    width: 27px;
+    // border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    @include tablets {
+        display: flex;
+        margin-left: 25px;
+    }
+}
+
+.burger-menu__item {
+    display: block;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.arrow-bottom {
+    width: 29px;
+    height: 14px;
+    position: relative;
+    // bottom: 5%;
+    .arrow-bottom__icon{
+        width: 29px;
+    height: 14px;
+    fill:#fff;
+    }
+
+    @include tablets{
+        margin-bottom: 40px;
+    }
+}
+
+// @media (max-width: 48rem) {
+//     .container {
+//         max-width: 44.6875rem;
+
+//         // min-height: 0rem;
+//     }
+//     .header {
+//         justify-content: space-between;
+//     }
+//     .header__menu {
+//         display: none;
+//     }
+//     .one__content {
+//         flex-direction: column;
+//         align-items: center;
+//         padding: 0;
+//     }
+
+//     .list-pagination {
+//         display: none;
+//     }
+// }

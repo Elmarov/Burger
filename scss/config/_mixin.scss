@@ -1,4 +1,4 @@
-@mixin circle($width,$color) {
+@mixin circle($width, $color) {
     width: $width;
     height: $width;
     -webkit-border-radius: $width/2;
@@ -8,20 +8,31 @@
     border-radius: $width/2;
     background-color: $color;
 }
-@mixin input($width:220px,){
-    width:$width;
+@mixin input($width: 220px) {
+    width: $width;
     height: 35px;
     border-radius: 5px;
     font-family: Ubuntu;
-font-size: 14px;
-line-height: 24px;
-font-weight: 300;
-color: #2f3234;
-    
-// border: 2px solid #f9b43b;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #2f3234;
+
+    // border: 2px solid #f9b43b;
 }
 
-//respon
-@function rem($px){
-@return $px / 16px+0rem;
+@mixin tablets {
+    @media screen and (max-width: $tablets){
+        @content;
+    }
+
+
+}
+
+
+@mixin phones{
+    @media screen and (max-width: $phones){
+        @content;
+    }
+    
 }
