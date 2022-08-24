@@ -69,11 +69,11 @@
     text-align: center;
 
     @include phones{
-        text-align: left;
+        text-align: center;
         // padding-top: 10px;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
    
    
