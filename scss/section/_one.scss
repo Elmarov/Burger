@@ -52,6 +52,7 @@
     justify-content: center;
     align-items: center;
     color: #fff;
+    white-space: nowrap;
     &::after {
         content: "";
         display: block;
@@ -92,7 +93,7 @@
     // flex-wrap: wrap;
     // flex-grow: 1;
     // align-items: center;
-    padding-bottom: 19%;
+    padding-bottom: 13%;
     @include tablets{
         width: 100%;
         padding-bottom: 0;
@@ -164,7 +165,7 @@
     flex-direction: column;
     position: fixed;
     top: 13%;
-    right: 174px;
+    right: 3%;
     gap: 13px;
     z-index: 5;
     @include tablets {
@@ -219,7 +220,7 @@
 
 .arrow-bottom {
     width: 29px;
-    height: 14px;
+    height: 65px;
     position: relative;
     // bottom: 5%;
     .arrow-bottom__icon{

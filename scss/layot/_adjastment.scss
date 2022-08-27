@@ -49,6 +49,14 @@ html , body{
     background-color: rgba(0, 0, 0, 0.31);
     border-bottom: 1px solid red;
     overflow: hidden;
+    @include tablets {
+        // flex-direction: column;
+        min-height: 1020px;
+    }
+
+    @include phones {
+        min-height: 800px;
+    }
 }
 .order-link {
     min-width: 98px;
