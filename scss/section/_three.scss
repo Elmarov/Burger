@@ -26,6 +26,10 @@
 .container__three {
     display: flex;
     flex-direction: row;
+
+    @include phones {
+        padding: 0 10px;
+    }
 }
 
 .content__three {
@@ -109,9 +113,9 @@
         top: 0;
         left: 4%;
     }
-    @include phones{
+    @include phones {
         top: -125px;
-    left: -1%;
+        left: -1%;
     }
 }
 .icon-slider {
@@ -134,7 +138,7 @@
         margin: 0 auto;
         // border: 1px solid red;
     }
-    @include phones{
+    @include phones {
         width: 100%;
     }
 }
@@ -146,7 +150,7 @@
     @include tablets {
         align-items: flex-end;
     }
-    @include phones{
+    @include phones {
         align-items: center;
     }
 }
@@ -197,13 +201,10 @@
     gap: 40px;
     padding-left: 15px;
     @include tablets {
-
     }
     @include phones {
-       position: relative;
-        
+        position: relative;
     }
-    
 }
 
 .slider__title {
@@ -236,7 +237,7 @@
         top: -8px;
     }
 
-    @include phones{
+    @include phones {
         position: absolute;
         top: 186px;
         width: 100%;
@@ -249,36 +250,38 @@
     @include tablets {
         top: 7px;
     }
-    @include phones{
-font-size: 50px;
-       
-    }
-    span {
-        font-family: "Gagalin";
-        font-size: 72px;
-        line-height: 28px;
-        font-weight: 400;
-        letter-spacing: -0.025em;
-        color: #e35028;
-        @include phones{
-            font-size: 50px;
-                   
-                }
 
-        small {
-            font-size: 30px;
-            position: relative;
-            right: 15px;
-        }
+    @include phones {
+        font-size: 50px;
+        top: 1%;
+        margin: 0 auto;
     }
+
+span {
+    font-family: "Gagalin";
+    font-size: 72px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    color: #e35028;
+
+    @include phones {
+        font-size: 50px;
+    }
+
+    small {
+        font-size: 30px;
+        position: relative;
+        right: 15px;
+    }
+}
 }
 .slider__order-link {
     position: relative;
     left: 13px;
-    @include phones{
+    @include phones {
         left: 0;
-               
-            }
+    }
 }
 
 .right-scrol {
@@ -290,9 +293,9 @@ font-size: 50px;
         left: -1%;
         top: -4px;
     }
-    @include phones{
+    @include phones {
         left: 4%;
-    top: -125px;
+        top: -125px;
     }
 }
 
@@ -318,11 +321,11 @@ font-size: 50px;
         top: 3px;
         right: 78px;
     }
-    @include phones{
+    @include phones {
         top: -55px;
         right: -55px;
-}
-    
+    }
+
     // align-items: center;
     &-c {
         position: absolute;
