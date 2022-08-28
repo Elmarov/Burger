@@ -200,6 +200,7 @@
     justify-content: center;
     gap: 40px;
     padding-left: 15px;
+    text-align: center;
     @include tablets {
     }
     @include phones {
@@ -213,6 +214,8 @@
     top: -27px;
     display: inline;
     line-height: 72px;
+    text-align: center;
+    width: 100%;
     @include tablets {
         top: 0px;
     }
@@ -241,6 +244,7 @@
         position: absolute;
         top: 186px;
         width: 100%;
+        padding-bottom: 10px;
     }
 }
 .block__btn {
