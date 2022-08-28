@@ -1037,6 +1037,7 @@ html, body {
     font-size: 50px;
     top: 1%;
     margin: 0 auto;
+    padding-top: 10px;
   }
 }
 
@@ -1225,6 +1226,16 @@ html, body {
           align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .container__four {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    opacity: 0.9;
+  }
+}
+
 .block__title {
   height: 34%;
   width: 100%;
@@ -1239,6 +1250,14 @@ html, body {
           align-items: flex-end;
 }
 
+@media screen and (max-width: 768px) {
+  .block__title {
+    height: 38%;
+    position: relative;
+    left: 30px;
+  }
+}
+
 .four__title {
   font-family: "Gagalin";
   font-size: 72.1px;
@@ -1246,6 +1265,12 @@ html, body {
   font-weight: 400;
   right: 83px;
   top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .four__title {
+    right: 0;
+  }
 }
 
 .list__coment {
@@ -1276,6 +1301,14 @@ html, body {
           align-items: flex-start;
 }
 
+@media screen and (max-width: 768px) {
+  .item__coment {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .item__coment-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1289,6 +1322,12 @@ html, body {
   line-height: 28px;
   font-weight: 400;
   color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .item__coment-link {
+    font-size: 22px;
+  }
 }
 
 .item__coment-link::before {
@@ -1309,32 +1348,93 @@ html, body {
   overflow: hidden;
 }
 
+@media screen and (max-width: 768px) {
+  .item__coment--activ {
+    height: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .item__coment--activ .four__coment {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 26px;
+  gap: 10px;
   height: 100%;
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .item__coment--activ .four__coment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+    margin: 0;
+  }
+}
+
 .item__coment--activ .four__coment .four__coment-img {
   display: block;
-  position: relative;
-  min-width: 110px;
-  height: 101px;
-  left: 8px;
-  top: 7px;
-  background: url("../img/four/aphex1.png") center center;
-  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .item__coment--activ .four__coment .four__coment-img {
+    width: 100%;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.item__coment--activ .four__coment .four__coment-img .four__coment-ava {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
+  position: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .item__coment--activ .item__coment-link {
   color: #f9b43b;
+}
+
+@media screen and (max-width: 768px) {
+  .item__coment--activ .item__coment-link {
+    font-size: 22px;
+  }
 }
 
 .item__coment--activ .item__coment-link::before {
@@ -1350,6 +1450,32 @@ html, body {
   line-height: 24px;
 }
 
+@media screen and (max-width: 768px) {
+  .four__coment-text {
+    height: 50%;
+    text-align: center;
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.four__coment-block {
+  width: 100px;
+  height: 100px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+}
+
 .four__coment-subtitle {
   font-family: "ubuntubold";
   font-weight: 700;
@@ -1358,6 +1484,18 @@ html, body {
 
 .four__coment-message {
   font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  .four__coment-message {
+    padding: 0 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .four__coment-message {
+    padding: 0;
+  }
 }
 
 .section__five {
@@ -1377,10 +1515,22 @@ html, body {
   min-width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .container__five {
+    min-height: 100%;
+  }
+}
+
 .title__burger--white {
   color: #fff;
   margin-left: 93px;
   margin-top: -395px;
+}
+
+@media screen and (max-width: 768px) {
+  .title__burger--white {
+    display: none;
+  }
 }
 
 .list__harmonic {
@@ -1401,6 +1551,12 @@ html, body {
           flex-direction: row;
 }
 
+@media screen and (max-width: 768px) {
+  .list__harmonic {
+    width: 100%;
+  }
+}
+
 .item__harmonic {
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
@@ -1419,6 +1575,18 @@ html, body {
 
 .item__harmonic:hover .box-text {
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .item__harmonic:hover .box-text {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .item__harmonic:hover .box-text {
+    z-index: 10;
+  }
 }
 
 .item__harmonic:hover .box-title span {
@@ -1503,6 +1671,12 @@ html, body {
   background-size: cover;
 }
 
+@media screen and (max-width: 768px) {
+  .item__harmonic:nth-child(1) .box-title span {
+    top: 340px;
+  }
+}
+
 .item__harmonic:nth-child(2) .box-title {
   background: url("../img/faif/burger-ak2.jpg") center no-repeat;
   background-size: cover;
@@ -1512,6 +1686,12 @@ html, body {
   top: 130px;
 }
 
+@media screen and (max-width: 768px) {
+  .item__harmonic:nth-child(2) .box-title span {
+    top: 320px;
+  }
+}
+
 .item__harmonic:nth-child(3) .box-title {
   background: url("../img/faif/burger-ak3.jpg") center no-repeat;
   background-size: cover;
@@ -1519,6 +1699,12 @@ html, body {
 
 .item__harmonic:nth-child(3) .box-title span {
   top: 160px;
+}
+
+@media screen and (max-width: 768px) {
+  .item__harmonic:nth-child(3) .box-title span {
+    top: 340px;
+  }
 }
 
 .section__six {

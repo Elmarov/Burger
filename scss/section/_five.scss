@@ -10,11 +10,20 @@
 
     height: 100vh;
     min-width: 100%;
+
+    @include tablets{
+        min-height: 100%;
+    }
+
 }
 .title__burger--white {
     color: #fff;
     margin-left: 93px;
     margin-top: -395px;
+    @include tablets{
+        display: none;
+
+    }
   
 }
 
@@ -25,6 +34,11 @@
     justify-content: flex-end;
     align-items: start;
     flex-direction: row;
+
+    @include tablets{
+        width: 100%;
+
+    }
    
 }
 
@@ -42,9 +56,21 @@
     color: #ffffff;
     transition: all 1.5s;
 
+    @include tablets{
+        // align-items: ;
+    }
+
     &:hover {
         .box-text {
             display: block;
+
+            @include tablets{
+                max-width: 100%;
+            }
+            @include phones{
+                // position: absolute;
+                z-index: 10;
+            }
             
         }
         .box-title {
@@ -63,6 +89,8 @@
         align-items: center;
         justify-content: center;
 
+       
+
         span {
             padding: 0;
             margin: 0;
@@ -76,6 +104,8 @@
             font-size: 40px;
             position: relative;
             top: 140px;
+          
+            
         }
     }
     .box-text {
@@ -117,6 +147,14 @@
         .box-title {
             background: url("../img/faif/burger-ak1.jpg") center no-repeat;
             background-size: cover;
+
+            span{
+
+                @include tablets{
+                    top: 340px;
+            
+                }
+            }
         }
     }
 
@@ -126,6 +164,11 @@
             background-size: cover;
             span{
                 top: 130px;
+
+                @include tablets{
+                    top: 320px;
+            
+                }
             }
         }
         //  width: 80px;
@@ -137,7 +180,13 @@
             background-size: cover;
             span{
                 top: 160px;
+
+                @include tablets{
+                    top: 340px;
+            
+                }
             }
         }
     }
 }
+
