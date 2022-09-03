@@ -52,7 +52,7 @@ html , body{
     min-height: 650px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.31);
-    border-bottom: 1px solid red;
+    // border-bottom: 1px solid red;
     overflow: hidden;
     @include tablets {
         // flex-direction: column;
