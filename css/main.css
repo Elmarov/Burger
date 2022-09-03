@@ -1677,6 +1677,12 @@ html, body {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .item__harmonic:nth-child(1) .box-title span {
+    top: 200px;
+  }
+}
+
 .item__harmonic:nth-child(2) .box-title {
   background: url("../img/faif/burger-ak2.jpg") center no-repeat;
   background-size: cover;
@@ -1689,6 +1695,12 @@ html, body {
 @media screen and (max-width: 768px) {
   .item__harmonic:nth-child(2) .box-title span {
     top: 320px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .item__harmonic:nth-child(2) .box-title span {
+    top: 180px;
   }
 }
 
@@ -1707,14 +1719,18 @@ html, body {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .item__harmonic:nth-child(3) .box-title span {
+    top: 220px;
+  }
+}
+
 .section__six {
+  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1780,14 +1796,34 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 25%;
-          flex: 1 1 25%;
+  width: 25%;
   position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .block-photo {
+    width: 50%;
+    height: 38%;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .block-photo {
+    height: 30%;
+  }
 }
 
 .block-photo:hover .block-coment {
   opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .block-photo:hover .block-coment {
+    width: 100%;
+    font-size: 24px;
+  }
 }
 
 .block-coment {
@@ -1815,6 +1851,18 @@ html, body {
   transition: all 0.7s;
 }
 
+@media screen and (max-width: 768px) {
+  .block-coment {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+    font-family: "gagalin";
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
 .block-photo__img {
   width: 100%;
   display: block;
@@ -1835,6 +1883,21 @@ html, body {
   padding-bottom: 18px;
 }
 
+@media screen and (max-width: 768px) {
+  .block-coment__name {
+    font-family: gagalin;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .block-coment__name {
+    font-size: 24px;
+    font-family: gagalin;
+    text-align: center;
+  }
+}
+
 .block-coment__text {
   font-family: "ubuntulight";
   font-size: 14px;
@@ -1842,6 +1905,21 @@ html, body {
   font-weight: 300;
   color: #ffffff;
   margin-bottom: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .block-coment__text {
+    padding: 0 20px;
+    text-align: center;
+    font-size: 14px;
+    font-family: ubuntulight;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .block-coment__text {
+    display: none;
+  }
 }
 
 .block-coment__linck {
@@ -1859,9 +1937,57 @@ html, body {
   background-size: cover;
 }
 
+@media screen and (max-width: 480px) {
+  .section__seven {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container__seven .section__title--black {
+    text-align: center;
+    padding: 0 35px;
+    position: relative;
+    top: -57px;
+  }
+}
+
+.container__seven {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .block-vidio {
-  width: 660px;
-  height: 370px;
+  width: 70%;
+  height: 50%;
+}
+
+.block-vidio iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .block-vidio {
+    width: 99%;
+    height: 35%;
+  }
 }
 
 .section__form {
@@ -1874,10 +2000,38 @@ html, body {
       -ms-flex-pack: start;
           justify-content: start;
   gap: 150px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container__form {
+    gap: 182px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container__form {
+    gap: 62px;
+  }
 }
 
 .section__title-form {
   top: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .section__title-form {
+    top: 140px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section__title-form {
+    text-align: center;
+    top: 48px;
+    font-size: 50px;
+    line-height: 5rem;
+  }
 }
 
 .form {
@@ -1889,6 +2043,26 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   gap: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form {
+    margin: 0;
+  }
 }
 
 .block-input {
@@ -1908,6 +2082,24 @@ html, body {
   -ms-flex-line-pack: start;
       align-content: flex-start;
   gap: 22px;
+}
+
+@media screen and (max-width: 768px) {
+  .block-input {
+    width: 70%;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .block-input {
+    width: 100%;
+    gap: 17px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .block-input label {
@@ -1932,8 +2124,20 @@ html, body {
   cursor: pointer;
 }
 
-.block-btn {
-  width: 50%;
+.block-input label[for="name"] {
+  width: 45%;
+}
+
+.block-input label[for="tel"] {
+  width: 45%;
+}
+
+.block-input label[for="tel"] .input {
+  width: 100%;
+}
+
+.block-input label[for="street"] {
+  width: 100%;
 }
 
 .input {
@@ -1964,6 +2168,19 @@ html, body {
   color: #2f3234;
 }
 
+@media screen and (max-width: 768px) {
+  .input-long {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    font-family: Ubuntu;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #2f3234;
+  }
+}
+
 .input-little {
   width: 92px;
   height: 35px;
@@ -1976,6 +2193,7 @@ html, body {
 }
 
 .block-btn {
+  width: 50%;
   font-family: Ubuntu;
   font-size: 14px;
   line-height: 24px;
@@ -1989,6 +2207,20 @@ html, body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 9px;
+}
+
+@media screen and (max-width: 768px) {
+  .block-btn {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .block-btn {
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+  }
 }
 
 .label-text textarea {
@@ -2093,9 +2325,25 @@ html, body {
   background-image: url("../img/che.jpg");
 }
 
+@media screen and (max-width: 480px) {
+  .label-chek {
+    text-align: center;
+  }
+}
+
 .order-link--reset {
   background: transparent;
   text-transform: capitalize;
+}
+
+.bloks-radio {
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .form-btn {
+    text-align: center;
+  }
 }
 
 .section__maps {
@@ -2120,14 +2368,34 @@ html, body {
   margin-top: auto;
 }
 
+@media screen and (max-width: 480px) {
+  .footer {
+    height: auto;
+    padding: 0;
+    min-height: 100px;
+    z-index: 10;
+  }
+}
+
 .container__footer {
   margin: 0 auto;
-  max-height: 60px;
   max-width: 940px;
   width: 940px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .container__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    bottom: 100px;
+    right: 0;
+    left: 0;
+  }
 }
 
 .footer__text {
@@ -2140,6 +2408,15 @@ html, body {
   padding-bottom: 10px;
 }
 
+@media screen and (max-width: 480px) {
+  .footer__text {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+}
+
 .footer__text a {
   font-weight: 700;
   color: #e45028;
@@ -2147,6 +2424,13 @@ html, body {
 
 .footer__social {
   width: 50%;
+}
+
+@media screen and (max-width: 480px) {
+  .footer__social {
+    width: 100%;
+    padding-top: 8px;
+  }
 }
 
 .footer__list {
@@ -2162,6 +2446,14 @@ html, body {
           justify-content: flex-end;
   gap: 16px;
   padding-bottom: 9px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .icon-social {

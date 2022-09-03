@@ -25,6 +25,11 @@ html , body{
     min-height: 650px;
     // overflow: hidden;
     flex: 1;
+
+    @include phones{
+// flex-basis: 80%;
+        // padding-bottom: 22%;
+    }
     
 }
 .container {

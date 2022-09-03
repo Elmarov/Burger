@@ -154,6 +154,9 @@
                     top: 340px;
             
                 }
+                @include phones{
+                    top: 200px;
+                }
             }
         }
     }
@@ -168,6 +171,9 @@
                 @include tablets{
                     top: 320px;
             
+                }
+                @include phones{
+                    top: 180px;
                 }
             }
         }
@@ -184,6 +190,9 @@
                 @include tablets{
                     top: 340px;
             
+                }
+                @include phones{
+                    top: 220px;
                 }
             }
         }

@@ -7,10 +7,29 @@
     // border: 1px solid red;
     justify-content: start;
     gap: 150px;
+    margin: 0 auto;
+
+    @include tablets{
+        gap: 182px;
+    }
+
+    @include phones{
+        gap: 62px;
+    }
 }
 .section__title-form {
     top: 120px;
 
+    @include tablets{
+        top: 140px;
+    }
+@include phones{
+    text-align: center;
+    top: 48px;
+    font-size: 50px;
+    line-height: 5rem;
+    
+}
     // border: 1px solid green;
 }
 .form {
@@ -19,6 +38,16 @@
     width: 100%;
     display: flex;
     gap: 1.25rem;
+    @include tablets{
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    @include phones{
+        margin: 0;
+    }
 }
 .block-input {
     // border: 1px solid red;
@@ -29,6 +58,17 @@
     justify-content: space-between;
     align-content: flex-start;
     gap: 22px;
+
+    @include tablets{
+        width: 70%;
+        gap: 20px;
+    }
+
+    @include phones{
+        width: 100%;
+        gap: 17px;
+        flex-direction: row;
+    }
     label {
         height: fit-content;
         width: min-content;
@@ -41,13 +81,31 @@
         flex-direction: column;
         text-transform: capitalize;
         cursor: pointer;
+       
+    }
+    label[for="name"]{
+        width:45%;
+    }
+    label[for="tel"]{
+        width: 45%;
+        .input{
+            width: 100%;
+        }
+    }
+
+    label[for="street"]{
+// color: blue;
+width: 100%;
     }
 }
 
-.block-btn {
-    // border: 1px solid purple;
-    width: 50%;
-}
+// .block-btn {
+//     // border: 1px solid purple;
+//     // width: 50%;
+//     @include tablets{
+//         width: 100%;
+//     }
+// }
 
 // .input:active{
 //     border-color: $yellow;
@@ -67,6 +125,11 @@
     &-long {
         @include input(462px);
         // min-width: 100%;
+        @include tablets{
+            // color:red;
+            @include input(100%);
+            // width: 100px;
+        }
     }
     &-little {
         @include input(460px / 5);
@@ -74,6 +137,7 @@
 }
 
 .block-btn {
+    width: 50%;
     font-family: Ubuntu;
     font-size: 14px;
     line-height: 24px;
@@ -82,6 +146,17 @@
     display: flex;
     flex-direction: column;
     gap: 9px;
+
+    @include tablets{
+        width: 70%;
+    }
+
+    @include phones{
+        width: 100%;
+        height: 100%;
+        gap: 30px;
+        // justify-content: space-around;
+    }
 }
 .label-text {
     textarea {
@@ -163,12 +238,26 @@ background-size: cover;
         }
     }
     margin-bottom: 12px;
+
+    @include phones{
+        text-align: center;
+    }
 }
-.form-btn {
-}
-.order-link {
-}
+// .form-btn {
+// }
+// .order-link {
+// }
 .order-link--reset {
     background: transparent;
     text-transform: capitalize;
+}
+
+.bloks-radio{
+    text-align: center;
+}
+.form-btn{
+
+    @include phones{
+        text-align: center;
+    }
 }

@@ -1,9 +1,41 @@
 .section__seven{
     background: url(../img/bg/bg__seven.jpg) center no-repeat;
     background-size: cover;
+
+
+    @include phones{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.container__seven .section__title--black{
+
+
+    @include phones{
+        text-align: center;
+        padding: 0 35px;
+        position: relative;
+        top: -57px;
+    }
+}
+.container__seven{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .block-vidio{
-    width: 660px;
-height: 370px;
+    width: 70%;
+height: 50%;
 // background-color: #000000;
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+@include phones {
+    width: 99%;
+    height: 35%;
+}
 }
