@@ -49,6 +49,7 @@
         margin: 0;
     }
 }
+
 .block-input {
     // border: 1px solid red;
     width: 50%;
@@ -96,6 +97,12 @@
     label[for="street"]{
 // color: blue;
 width: 100%;
+    }
+
+    label[for="storey"]{
+        @include phones{
+            display: none;
+        }
     }
 }
 

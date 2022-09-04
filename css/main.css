@@ -2139,6 +2139,12 @@ html, body {
   width: 100%;
 }
 
+@media screen and (max-width: 480px) {
+  .block-input label[for="storey"] {
+    display: none;
+  }
+}
+
 .input {
   border: none;
   padding: 12px 20px;
