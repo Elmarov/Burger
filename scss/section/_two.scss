@@ -21,7 +21,7 @@
         margin-bottom: 2.5rem;
     }
     @include phones{
-        font-size: rem(56px);
+        font-size: 3.5rem;
         margin-bottom: 0;
         // margin-top: 1.75rem;
         position: absolute;
@@ -102,7 +102,7 @@ transition: all .5s;
 
 .block-content__title {
     font-family:"lifehack";
-font-size: rem(1.5125rem);
+font-size: 1.5125rem;
 line-height: 1.75rem;
 font-weight: 500;
 letter-spacing: -0.025rem;

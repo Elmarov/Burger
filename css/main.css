@@ -212,8 +212,7 @@ html, body {
 }
 
 .header {
-  width: 100vw;
-  min-width: 100vw;
+  min-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,7 +509,7 @@ html, body {
 
 .two__container {
   position: relative;
-  gap: 50px;
+  gap: 3.125rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -525,7 +524,7 @@ html, body {
 
 @media screen and (max-width: 768px) {
   .section__title--black {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -534,7 +533,7 @@ html, body {
     font-size: 3.5rem;
     margin-bottom: 0;
     position: absolute;
-    top: 87px;
+    top: 5.4375rem;
   }
 }
 
@@ -553,7 +552,7 @@ html, body {
         -ms-flex-direction: column;
             flex-direction: column;
     position: absolute;
-    top: 176px;
+    top: 11rem;
   }
 }
 
@@ -565,7 +564,7 @@ html, body {
 @media screen and (max-width: 480px) {
   .item__two-content {
     width: 100%;
-    margin-bottom: 38px;
+    margin-bottom: 2.375rem;
   }
 }
 
@@ -583,8 +582,8 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 10px;
-  gap: 20px;
+  padding: 0 .625rem;
+  gap: 1.25rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -621,8 +620,8 @@ html, body {
 }
 
 .icon {
-  height: 97px;
-  width: 89px;
+  height: 6.0625rem;
+  width: 5.5625rem;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
@@ -648,23 +647,23 @@ html, body {
 .block-content__title {
   font-family: "lifehack";
   font-size: 1.5125rem;
-  line-height: 28px;
+  line-height: 1.75rem;
   font-weight: 500;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
   color: #2f3234;
 }
 
 @media screen and (max-width: 480px) {
   .block-content__title {
-    margin-bottom: 0px;
+    margin-bottom: 0rem;
   }
 }
 
 .block-content__text {
   opacity: 0.8;
   font-family: "ubuntulight";
-  font-size: 14.0992px;
-  line-height: 24px;
+  font-size: .8812rem;
+  line-height: 1.5rem;
   font-weight: 300;
   color: #2f3234;
   text-align: center;
@@ -1221,7 +1220,7 @@ html, body {
 
 .container__four {
   width: 50%;
-  min-height: 650px;
+  min-height: 40.625rem;
   margin: 0 0 0 auto;
   background-color: #2f3234;
   display: -webkit-box;
@@ -1264,17 +1263,17 @@ html, body {
   .block__title {
     height: 38%;
     position: relative;
-    left: 30px;
+    left: 1.875rem;
   }
 }
 
 .four__title {
   font-family: "Gagalin";
-  font-size: 72.1px;
-  line-height: 64px;
+  font-size: 4.5062rem;
+  line-height: 4rem;
   font-weight: 400;
-  right: 83px;
-  top: 5px;
+  right: 5.1875rem;
+  top: .3125rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -1293,9 +1292,9 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 24px;
-  padding-left: 7px;
-  padding-top: 47px;
+  gap: 1.5rem;
+  padding-left: .4375rem;
+  padding-top: 2.9375rem;
 }
 
 .item__coment {
@@ -1323,20 +1322,20 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 9px;
+  gap: .5625rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-family: "Gagalin";
-  font-size: 14.1px;
-  line-height: 28px;
+  font-size: .8812rem;
+  line-height: 1.75rem;
   font-weight: 400;
   color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
   .item__coment-link {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 }
 
@@ -1345,7 +1344,7 @@ html, body {
   display: block;
   width: 0;
   height: 0;
-  border: 5px solid transparent;
+  border: .3125rem solid transparent;
   border-bottom-width: 0;
   border-top-color: #f9b43b;
 }
@@ -1385,9 +1384,9 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: .625rem;
   height: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -1443,7 +1442,7 @@ html, body {
 
 @media screen and (max-width: 768px) {
   .item__coment--activ .item__coment-link {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 }
 
@@ -1456,15 +1455,15 @@ html, body {
   height: 100%;
   color: #ffffff;
   font-family: "Ubuntu";
-  font-size: 14.1px;
-  line-height: 24px;
+  font-size: .8812rem;
+  line-height: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {
   .four__coment-text {
     height: 50%;
     text-align: center;
-    padding: 0 20px;
+    padding: 0 1.25rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1479,8 +1478,8 @@ html, body {
 }
 
 .four__coment-block {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   display: block;
   border-radius: 50%;
   position: relative;
@@ -1489,7 +1488,7 @@ html, body {
 .four__coment-subtitle {
   font-family: "ubuntubold";
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: .75rem;
 }
 
 .four__coment-message {
@@ -1498,7 +1497,7 @@ html, body {
 
 @media screen and (max-width: 768px) {
   .four__coment-message {
-    padding: 0 80px;
+    padding: 0 5rem;
   }
 }
 
@@ -1533,8 +1532,8 @@ html, body {
 
 .title__burger--white {
   color: #fff;
-  margin-left: 93px;
-  margin-top: -395px;
+  margin-left: 5.8125rem;
+  margin-top: -24.6875rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -1605,7 +1604,7 @@ html, body {
 
 .item__harmonic .box-title {
   max-height: 100%;
-  width: 80px;
+  width: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1640,33 +1639,33 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   white-space: nowrap;
-  font-size: 40px;
+  font-size: 2.5rem;
   position: relative;
-  top: 140px;
+  top: 8.75rem;
 }
 
 .item__harmonic .box-text {
-  max-width: 540px;
+  max-width: 33.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 62px 35px;
+  padding: 3.875rem 2.1875rem;
   opacity: 0.92;
   background-color: #2f3234;
   font-family: "ubuntulight";
-  font-size: 14px;
-  line-height: 24px;
+  font-size: .875rem;
+  line-height: 1.5rem;
   font-weight: 300;
   display: none;
 }
 
 .item__harmonic .item__harmonic--activ .box-text {
-  max-width: 540px;
+  max-width: 33.75rem;
   height: 100%;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 62px 35px;
+  padding: 3.875rem 2.1875rem;
   overflow: visible;
   height: 100%;
   width: 100%;
@@ -1683,13 +1682,13 @@ html, body {
 
 @media screen and (max-width: 768px) {
   .item__harmonic:nth-child(1) .box-title span {
-    top: 340px;
+    top: 21.25rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .item__harmonic:nth-child(1) .box-title span {
-    top: 200px;
+    top: 12.5rem;
   }
 }
 
@@ -1699,18 +1698,18 @@ html, body {
 }
 
 .item__harmonic:nth-child(2) .box-title span {
-  top: 130px;
+  top: 8.125rem;
 }
 
 @media screen and (max-width: 768px) {
   .item__harmonic:nth-child(2) .box-title span {
-    top: 320px;
+    top: 20rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .item__harmonic:nth-child(2) .box-title span {
-    top: 180px;
+    top: 11.25rem;
   }
 }
 
@@ -1720,18 +1719,18 @@ html, body {
 }
 
 .item__harmonic:nth-child(3) .box-title span {
-  top: 160px;
+  top: 10rem;
 }
 
 @media screen and (max-width: 768px) {
   .item__harmonic:nth-child(3) .box-title span {
-    top: 340px;
+    top: 21.25rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .item__harmonic:nth-child(3) .box-title span {
-    top: 220px;
+    top: 13.75rem;
   }
 }
 
@@ -1832,15 +1831,15 @@ html, body {
 @media screen and (max-width: 480px) {
   .block-photo:hover .block-coment {
     width: 100%;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 
 .block-coment {
-  padding-top: 37px;
-  padding-right: 30px;
-  padding-left: 17px;
-  padding-bottom: 50px;
+  padding-top: 2.3125rem;
+  padding-right: 1.875rem;
+  padding-left: 1.0625rem;
+  padding-bottom: 3.125rem;
   background: rgba(20, 20, 20, 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1866,7 +1865,7 @@ html, body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 14px;
+    font-size: .875rem;
     font-family: "gagalin";
     font-weight: 700;
     font-style: normal;
@@ -1886,23 +1885,23 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: " Gagalin";
-  font-size: 14px;
-  line-height: 28px;
+  font-size: .875rem;
+  line-height: 1.75rem;
   font-weight: 400;
   color: #ffffff;
-  padding-bottom: 18px;
+  padding-bottom: 1.125rem;
 }
 
 @media screen and (max-width: 768px) {
   .block-coment__name {
     font-family: gagalin;
-    font-size: 14px;
+    font-size: .875rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .block-coment__name {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: gagalin;
     text-align: center;
   }
@@ -1910,18 +1909,18 @@ html, body {
 
 .block-coment__text {
   font-family: "ubuntulight";
-  font-size: 14px;
-  line-height: 24px;
+  font-size: .875rem;
+  line-height: 1.5rem;
   font-weight: 300;
   color: #ffffff;
-  margin-bottom: 12px;
+  margin-bottom: .75rem;
 }
 
 @media screen and (max-width: 768px) {
   .block-coment__text {
-    padding: 0 20px;
+    padding: 0 1.25rem;
     text-align: center;
-    font-size: 14px;
+    font-size: .875rem;
     font-family: ubuntulight;
   }
 }
@@ -1933,8 +1932,8 @@ html, body {
 }
 
 .block-coment__linck {
-  width: 110px;
-  height: 35px;
+  width: 6.875rem;
+  height: 2.1875rem;
   background-color: #2f3234;
 }
 
@@ -1961,9 +1960,9 @@ html, body {
 @media screen and (max-width: 480px) {
   .container__seven .section__title--black {
     text-align: center;
-    padding: 0 35px;
+    padding: 0 2.1875rem;
     position: relative;
-    top: -57px;
+    top: -3.5625rem;
   }
 }
 
@@ -2009,38 +2008,38 @@ html, body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  gap: 150px;
+  gap: 9.375rem;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
   .container__form {
-    gap: 182px;
+    gap: 11.375rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .container__form {
-    gap: 62px;
+    gap: 3.875rem;
   }
 }
 
 .section__title-form {
-  top: 120px;
+  top: 7.5rem;
 }
 
 @media screen and (max-width: 768px) {
   .section__title-form {
-    top: 140px;
+    top: 8.75rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .section__title-form {
     text-align: center;
-    top: 48px;
-    font-size: 50px;
-    line-height: 5rem;
+    top: 3rem;
+    font-size: 3.125rem;
+    line-height: 80px;
   }
 }
 
@@ -2052,7 +2051,7 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1.25rem;
+  gap: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -2091,20 +2090,20 @@ html, body {
           justify-content: space-between;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  gap: 22px;
+  gap: 1.375rem;
 }
 
 @media screen and (max-width: 768px) {
   .block-input {
     width: 70%;
-    gap: 20px;
+    gap: 1.25rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .block-input {
     width: 100%;
-    gap: 17px;
+    gap: 1.0625rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2121,7 +2120,7 @@ html, body {
   width: min-content;
   color: #fff;
   font-family: Ubuntu;
-  font-size: 14px;
+  font-size: .875rem;
   font-weight: 300;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2135,7 +2134,12 @@ html, body {
 }
 
 .block-input label[for="name"] {
-  width: 45%;
+  width: 44%;
+}
+
+.block-input label[for="name"] input {
+  display: block;
+  width: 100%;
 }
 
 .block-input label[for="tel"] {
@@ -2158,7 +2162,7 @@ html, body {
 
 .input {
   border: none;
-  padding: 12px 20px;
+  padding: .75rem 1.25rem;
   width: 220px;
   height: 35px;
   border-radius: 5px;
@@ -2174,7 +2178,7 @@ html, body {
 }
 
 .input-long {
-  width: 462px;
+  width: 28.875rem;
   height: 35px;
   border-radius: 5px;
   font-family: Ubuntu;
@@ -2198,7 +2202,7 @@ html, body {
 }
 
 .input-little {
-  width: 92px;
+  width: 5.75rem;
   height: 35px;
   border-radius: 5px;
   font-family: Ubuntu;
@@ -2211,8 +2215,8 @@ html, body {
 .block-btn {
   width: 50%;
   font-family: Ubuntu;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: .875rem;
+  line-height: 1.5rem;
   font-weight: 300;
   color: #ffffff;
   display: -webkit-box;
@@ -2222,7 +2226,7 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 9px;
+  gap: .5625rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -2235,24 +2239,24 @@ html, body {
   .block-btn {
     width: 100%;
     height: 100%;
-    gap: 30px;
+    gap: 1.875rem;
   }
 }
 
 .label-text textarea {
   min-width: 100%;
-  height: 109px;
-  border: 1px solid #d1cfcb;
+  height: 6.8125rem;
+  border: .0625rem solid #d1cfcb;
 }
 
 .label-radio {
-  margin-right: 20px;
+  margin-right: 1.25rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  gap: 10px;
+  gap: .625rem;
 }
 
 .label-radio input {
@@ -2262,9 +2266,9 @@ html, body {
 }
 
 .label-radio input:checked + span::before {
-  width: 7px;
-  height: 7px;
-  border: 4px solid #fff;
+  width: .4375rem;
+  height: .4375rem;
+  border: .25rem solid #fff;
   background: url("../img/elli_rad.png") center center no-repeat;
   background-size: cover;
 }
@@ -2285,15 +2289,15 @@ html, body {
 .label-radio span::before {
   content: "";
   display: inline-block;
-  width: 16px;
-  height: 15px;
+  width: 1rem;
+  height: .9375rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: .625rem;
   background: #fff;
   background-repeat: no-repeat;
   background-position: center center;
@@ -2301,7 +2305,7 @@ html, body {
 }
 
 .label-chek {
-  margin-bottom: 12px;
+  margin-bottom: .75rem;
 }
 
 .label-chek span {
@@ -2320,10 +2324,10 @@ html, body {
 .label-chek span::before {
   content: "";
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: .9375rem;
+  height: .9375rem;
   background-color: #ffffff;
-  margin-right: 10px;
+  margin-right: .625rem;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
@@ -2336,8 +2340,8 @@ html, body {
 }
 
 .label-chek input:checked + span::before {
-  width: 15px;
-  height: 15px;
+  width: .9375rem;
+  height: .9375rem;
   background-image: url("../img/che.jpg");
 }
 
@@ -2370,7 +2374,7 @@ html, body {
 }
 
 .footer {
-  padding: 10px;
+  padding: .625rem;
   width: 100%;
   margin: 0 auto;
   background: #000;
@@ -2388,15 +2392,15 @@ html, body {
   .footer {
     height: auto;
     padding: 0;
-    min-height: 100px;
+    min-height: 6.25rem;
     z-index: 10;
   }
 }
 
 .container__footer {
   margin: 0 auto;
-  max-width: 940px;
-  width: 940px;
+  max-width: 58.75rem;
+  width: 58.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2408,7 +2412,7 @@ html, body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    bottom: 100px;
+    bottom: 6.25rem;
     right: 0;
     left: 0;
   }
@@ -2417,18 +2421,18 @@ html, body {
 .footer__text {
   width: 50%;
   font-family: "Ubuntu";
-  font-size: 14px;
-  line-height: 24px;
+  font-size: .875rem;
+  line-height: 1.5rem;
   font-weight: 300;
   color: #fff;
-  padding-bottom: 10px;
+  padding-bottom: .625rem;
 }
 
 @media screen and (max-width: 480px) {
   .footer__text {
     width: 100%;
     text-align: center;
-    padding-top: 10px;
+    padding-top: .625rem;
     padding-bottom: 0;
   }
 }
@@ -2445,7 +2449,7 @@ html, body {
 @media screen and (max-width: 480px) {
   .footer__social {
     width: 100%;
-    padding-top: 8px;
+    padding-top: .5rem;
   }
 }
 
@@ -2460,8 +2464,8 @@ html, body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  gap: 16px;
-  padding-bottom: 9px;
+  gap: 1rem;
+  padding-bottom: .5625rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -2473,8 +2477,8 @@ html, body {
 }
 
 .icon-social {
-  width: 23px;
-  height: 20px;
+  width: 1.4375rem;
+  height: 1.25rem;
   fill: #595959;
 }
 /*# sourceMappingURL=main.css.map */
