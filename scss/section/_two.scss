@@ -8,8 +8,8 @@
 
 .two__container {
     position: relative;
-    // top: -20px;
-    gap: 50px;
+    // top: -1.25rem;
+    gap: 3.125rem;
     @include tablets{
         gap: 0;
     }
@@ -18,34 +18,34 @@
     color:$dark;
 
     @include tablets{
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
     }
     @include phones{
-        font-size: 3.5rem;
+        font-size: rem(56px);
         margin-bottom: 0;
-        // margin-top: 28px;
+        // margin-top: 1.75rem;
         position: absolute;
-        top: 87px;
+        top: 5.4375rem;
     }
 }
 
 .list__two-content {
     display: flex;
     box-sizing: border-box;
-    // border: 1px solid red;
+    // border: .0625rem solid red;
     @include phones{
         flex-direction: column;
         position: absolute;
-        top:176px;
+        top:11rem;
     }
 }
 .item__two-content {
     width: 33.33%;
     display: block;
-    // border: 1px solid blue;
+    // border: .0625rem solid blue;
     @include phones{
         width: 100%;
-        margin-bottom: 38px;
+        margin-bottom: 2.375rem;
     }
   
 }
@@ -54,8 +54,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
-    gap: 20px;
+    padding: 0 .625rem;
+    gap: 1.25rem;
 
     @include phones{
         width: 100%;
@@ -70,7 +70,7 @@
 
     @include phones{
         text-align: center;
-        // padding-top: 10px;
+        // padding-top: .625rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -80,8 +80,8 @@
 
 }
 .icon{
-    height: 97px;
-    width: 89px;
+    height: 6.0625rem;
+    width: 5.5625rem;
     // fill:crimson;
 
 transition: all .5s;
@@ -102,20 +102,20 @@ transition: all .5s;
 
 .block-content__title {
     font-family:"lifehack";
-font-size: rem(24.2px);
-line-height: 28px;
+font-size: rem(1.5125rem);
+line-height: 1.75rem;
 font-weight: 500;
-letter-spacing: -0.025em;
+letter-spacing: -0.025rem;
 color:$dark;
 @include phones{
-    margin-bottom: 0px;
+    margin-bottom: 0rem;
 }
 }
 .block-content__text {
     opacity: 0.8;
 font-family: "ubuntulight";
-font-size: 14.1px;
-line-height: 24px;
+font-size: .8812rem;
+line-height: 1.5rem;
 font-weight: 300;
 color: #2f3234;
 text-align: center;

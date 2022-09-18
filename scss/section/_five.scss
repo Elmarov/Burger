@@ -18,8 +18,8 @@
 }
 .title__burger--white {
     color: #fff;
-    margin-left: 93px;
-    margin-top: -395px;
+    margin-left: 5.8125rem;
+    margin-top: -24.6875rem;
     @include tablets{
         display: none;
 
@@ -82,7 +82,7 @@
 
     .box-title {
         max-height: 100%;
-        width: 80px;
+        width: 5rem;
 
         display: flex;
         flex-direction: column;
@@ -101,22 +101,22 @@
             justify-content: center;
             align-items: center;
             white-space: nowrap;
-            font-size: 40px;
+            font-size: 2.5rem;
             position: relative;
-            top: 140px;
+            top: 8.75rem;
           
             
         }
     }
     .box-text {
-        max-width: 540px;
+        max-width: 33.75rem;
         display: flex;
-        padding: 62px 35px;
+        padding: 3.875rem 2.1875rem;
         opacity: 0.92;
         background-color: #2f3234;
         font-family: "ubuntulight";
-        font-size: 14px;
-        line-height: 24px;
+        font-size: .875rem;
+        line-height: 1.5rem;
         font-weight: 300;
         // height: 0;
         // width: 0;
@@ -126,10 +126,10 @@
 
     .item__harmonic--activ {
         .box-text {
-            max-width: 540px;
+            max-width: 33.75rem;
             height: 100%;
             flex: 1;
-            padding: 62px 35px;
+            padding: 3.875rem 2.1875rem;
             overflow: visible;
             height: 100%;
             width: 100%;
@@ -143,7 +143,7 @@
     &:nth-child(1) {
         // background: url("../img/faif/burger-ak1.jpg") center no-repeat;
         // background-size: cover;
-        //  width: 80px;
+        //  width: 5rem;
         .box-title {
             background: url("../img/faif/burger-ak1.jpg") center no-repeat;
             background-size: cover;
@@ -151,11 +151,11 @@
             span{
 
                 @include tablets{
-                    top: 340px;
+                    top: 21.25rem;
             
                 }
                 @include phones{
-                    top: 200px;
+                    top: 12.5rem;
                 }
             }
         }
@@ -166,18 +166,18 @@
             background: url("../img/faif/burger-ak2.jpg") center no-repeat;
             background-size: cover;
             span{
-                top: 130px;
+                top: 8.125rem;
 
                 @include tablets{
-                    top: 320px;
+                    top: 20rem;
             
                 }
                 @include phones{
-                    top: 180px;
+                    top: 11.25rem;
                 }
             }
         }
-        //  width: 80px;
+        //  width: 5rem;
     }
 
     &:nth-child(3) {
@@ -185,14 +185,14 @@
             background: url("../img/faif/burger-ak3.jpg") center no-repeat;
             background-size: cover;
             span{
-                top: 160px;
+                top: 10rem;
 
                 @include tablets{
-                    top: 340px;
+                    top: 21.25rem;
             
                 }
                 @include phones{
-                    top: 220px;
+                    top: 13.75rem;
                 }
             }
         }

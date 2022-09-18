@@ -3,7 +3,7 @@
 .section__six {
     height: 100%;
     width: 100%;
-    // min-height: 850px;
+    // min-height: 53.125rem;
     display: flex;
     // justify-content: center;
     align-items: center;
@@ -59,7 +59,7 @@
     }
 }
 .block-photo {
-    // border: 1px solid green;
+    // border: .0625rem solid green;
     display: flex;
     width: 25%;
     // flex: 1 1 25%;
@@ -70,8 +70,8 @@
         width: 50%;
         // flex:1 1 50%;
         height: 38%;
-        // width: 385px;
-        // height: 265px;
+        // width: 24.0625rem;
+        // height: 16.5625rem;
         filter: grayscale(100%);
     }
 
@@ -85,18 +85,18 @@
 
             @include phones{
                 width: 100%;
-                font-size: 24px;
+                font-size: 1.5rem;
             }
         }
     }
 }
 
 .block-coment {
-    padding-top: 37px;
-    padding-right: 30px;
-    padding-left: 17px;
-    padding-bottom: 50px;
-    //padding: 20px;
+    padding-top: 2.3125rem;
+    padding-right: 1.875rem;
+    padding-left: 1.0625rem;
+    padding-bottom: 3.125rem;
+    //padding: 1.25rem;
     background: rgba(20, 20, 20, 0.7);
     display: flex;
     flex-direction: column;
@@ -112,7 +112,7 @@
 
     @include tablets{
         align-items: center;
-        font-size: 14px;
+        font-size: .875rem;
         font-family: "gagalin";
         font-weight: 700;
         font-style: normal;
@@ -133,36 +133,36 @@
     margin: 0;
     padding: 0;
     font-family:" Gagalin";
-    font-size: 14px;
-    line-height: 28px;
+    font-size: .875rem;
+    line-height: 1.75rem;
     font-weight: 400;
     color: #ffffff;
-    padding-bottom: 18px;
+    padding-bottom: 1.125rem;
 
     @include tablets{
         font-family: gagalin;
-        font-size: 14px;
+        font-size: .875rem;
     }
 
     @include phones{
-        font-size: 24px;
+        font-size: 1.5rem;
         font-family: gagalin;
         text-align: center;
     }
 }
 .block-coment__text {
     font-family: "ubuntulight";
-    font-size: 14px;
-    line-height: 24px;
+    font-size: .875rem;
+    line-height: 1.5rem;
     font-weight: 300;
     color: #ffffff;
-    margin-bottom: 12px;
-    // padding-bottom: 20px;
+    margin-bottom: .75rem;
+    // padding-bottom: 1.25rem;
 
     @include tablets{
-        padding: 0 20px;
+        padding: 0 1.25rem;
         text-align: center;
-        font-size: 14px;
+        font-size: .875rem;
         font-family: ubuntulight;
     }
     @include phones{
@@ -170,8 +170,8 @@
     }
 }
 .block-coment__linck {
-    width: 110px;
-    height: 35px;
+    width: 6.875rem;
+    height: 2.1875rem;
     background-color: #2f3234;
     &:hover{
         background: rgba(20,20,20,0.7);

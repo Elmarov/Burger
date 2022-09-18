@@ -234,7 +234,7 @@ html, body {
   padding-right: 0.5rem;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 53.75rem) {
   .header__menu {
     display: none;
   }
@@ -277,9 +277,9 @@ html, body {
 .nav__item::after {
   content: "";
   display: block;
-  width: 0.25rem;
-  height: 0.25rem;
-  border-radius: 0.125rem;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
   background-color: #fff;
   margin: 0 1rem;
 }
@@ -338,7 +338,7 @@ html, body {
   .one__img {
     width: 55%;
     position: relative;
-    bottom: 30px;
+    bottom: 1.875rem;
   }
 }
 
@@ -371,7 +371,7 @@ html, body {
 @media screen and (max-width: 768px) {
   .one__discription {
     position: relative;
-    bottom: 30px;
+    bottom: 1.875rem;
   }
 }
 
@@ -383,12 +383,12 @@ html, body {
   color: #f9b43b;
   margin: 0;
   position: relative;
-  top: 0.625rem;
+  top: 10px;
 }
 
 .one__description-text {
   position: relative;
-  top: 1.875rem;
+  top: 30px;
   font-family: Lifehack;
   font-size: 4.0625rem;
   line-height: 3.75rem;
@@ -399,7 +399,7 @@ html, body {
 
 @media screen and (max-width: 768px) {
   .one__description-text {
-    padding: 0 60px;
+    padding: 0 3.75rem;
   }
 }
 
@@ -414,7 +414,7 @@ html, body {
   position: fixed;
   top: 13%;
   right: 3%;
-  gap: 13px;
+  gap: .8125rem;
   z-index: 5;
 }
 
@@ -440,20 +440,20 @@ html, body {
 
 .item-pagination span {
   display: block;
-  width: 0.3125rem;
-  height: 0.3125rem;
-  border-radius: 0.15625rem;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
   background-color: #fff;
 }
 
 .item-pagination:hover {
-  border: 0.0625rem solid #fff;
+  border: 1px solid #fff;
   border-radius: 50%;
 }
 
 .burger-menu {
-  height: 27px;
-  width: 27px;
+  height: 1.6875rem;
+  width: 1.6875rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -472,32 +472,32 @@ html, body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 25px;
+    margin-left: 1.5625rem;
   }
 }
 
 .burger-menu__item {
   display: block;
-  height: 4px;
+  height: .25rem;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: .625rem;
 }
 
 .arrow-bottom {
-  width: 29px;
-  height: 65px;
+  width: 1.8125rem;
+  height: 4.0625rem;
   position: relative;
 }
 
 .arrow-bottom .arrow-bottom__icon {
-  width: 29px;
-  height: 14px;
+  width: 1.8125rem;
+  height: .875rem;
   fill: #fff;
 }
 
 @media screen and (max-width: 768px) {
   .arrow-bottom {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -663,7 +663,7 @@ html, body {
 .block-content__text {
   opacity: 0.8;
   font-family: "ubuntulight";
-  font-size: 14.1px;
+  font-size: 14.0992px;
   line-height: 24px;
   font-weight: 300;
   color: #2f3234;
@@ -684,13 +684,13 @@ html, body {
 
 @media screen and (max-width: 768px) {
   .section__three {
-    min-height: 1020px;
+    min-height: 63.75rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .section__three {
-    min-height: 800px;
+    min-height: 50rem;
   }
 }
 
@@ -701,7 +701,7 @@ html, body {
 
 @media screen and (max-width: 768px) {
   .container__three {
-    min-height: 1020px;
+    min-height: 63.75rem;
   }
 }
 
@@ -717,7 +717,7 @@ html, body {
 
 @media screen and (max-width: 480px) {
   .container__three {
-    padding: 0 10px;
+    padding: 0 .625rem;
   }
 }
 
@@ -733,7 +733,7 @@ html, body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 1005px;
+    height: 62.8125rem;
   }
 }
 
@@ -767,10 +767,10 @@ html, body {
 
 .block__icon-burger {
   position: relative;
-  right: 16px;
-  bottom: 42px;
-  width: 90px;
-  height: 90px;
+  right: 1rem;
+  bottom: 2.625rem;
+  width: 5.625rem;
+  height: 5.625rem;
   background-color: #f08b33;
   color: #fff;
   display: -webkit-box;
@@ -786,7 +786,7 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 5px;
+  border-radius: .3125rem;
   -webkit-transition: all 1.8s ease;
   transition: all 1.8s ease;
 }
@@ -794,15 +794,15 @@ html, body {
 @media screen and (max-width: 768px) {
   .block__icon-burger {
     position: absolute;
-    top: -60px;
-    left: 106px;
+    top: -3.75rem;
+    left: 6.625rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .block__icon-burger {
-    top: -47px;
-    left: -26px;
+    top: -2.9375rem;
+    left: -1.625rem;
   }
 }
 
@@ -816,21 +816,21 @@ html, body {
 
 .block__icon-burger span {
   font-family: "Gagalin";
-  font-size: 14px;
-  line-height: 28px;
+  font-size: .875rem;
+  line-height: 1.75rem;
   font-weight: 400;
   color: #ffffff;
 }
 
 .icon-burg {
-  width: 46px;
-  height: 44px;
+  width: 2.875rem;
+  height: 2.75rem;
 }
 
 .left-scrol {
   position: relative;
   right: 3%;
-  bottom: 20px;
+  bottom: 1.25rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -842,7 +842,7 @@ html, body {
 
 @media screen and (max-width: 480px) {
   .left-scrol {
-    top: -125px;
+    top: -7.8125rem;
     left: -1%;
   }
 }
@@ -858,8 +858,8 @@ html, body {
 }
 
 .icon-scrol__left {
-  width: 25px;
-  height: 27px;
+  width: 1.5625rem;
+  height: 1.6875rem;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
@@ -933,8 +933,8 @@ html, body {
 }
 
 .icon-kkal {
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
 }
 
 .three__text {
@@ -946,14 +946,14 @@ html, body {
   .three__text {
     width: 100%;
     text-align: center;
-    padding: 0 60px;
+    padding: 0 3.75rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .three__text {
     padding: 0;
-    font-size: 50px;
+    font-size: 3.125rem;
   }
 }
 
@@ -969,8 +969,8 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 40px;
-  padding-left: 15px;
+  gap: 2.5rem;
+  padding-left: .9375rem;
   text-align: center;
 }
 
@@ -983,78 +983,78 @@ html, body {
 .slider__title {
   color: #fff;
   position: relative;
-  top: -27px;
+  top: -1.6875rem;
   display: inline;
-  line-height: 72px;
+  line-height: 4.5rem;
   text-align: center;
   width: 100%;
 }
 
 @media screen and (max-width: 768px) {
   .slider__title {
-    top: 0px;
+    top: 0rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .slider__title {
     padding: 0;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: regular;
     position: absolute;
-    top: 45px;
+    top: 2.8125rem;
   }
 }
 
 .slider__text {
   font-family: "ubuntulight";
-  font-size: 14px;
-  line-height: 23px;
+  font-size: .875rem;
+  line-height: 1.4375rem;
   font-weight: 300;
   color: #ffffff;
   position: relative;
-  top: -40px;
+  top: -2.5rem;
 }
 
 @media screen and (max-width: 768px) {
   .slider__text {
-    top: -8px;
+    top: -0.5rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .slider__text {
     position: absolute;
-    top: 186px;
+    top: 11.625rem;
     width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: .625rem;
   }
 }
 
 .block__btn {
   position: relative;
-  top: -33px;
+  top: -2.0625rem;
 }
 
 @media screen and (max-width: 768px) {
   .block__btn {
-    top: 7px;
+    top: .4375rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .block__btn {
-    font-size: 50px;
+    font-size: 3.125rem;
     top: 1%;
     margin: 0 auto;
-    padding-top: 10px;
+    padding-top: .625rem;
   }
 }
 
 .block__btn span {
   font-family: "Gagalin";
-  font-size: 72px;
-  line-height: 28px;
+  font-size: 4.5rem;
+  line-height: 1.75rem;
   font-weight: 400;
   letter-spacing: -0.025em;
   color: #e35028;
@@ -1062,19 +1062,19 @@ html, body {
 
 @media screen and (max-width: 480px) {
   .block__btn span {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
 }
 
 .block__btn span small {
-  font-size: 30px;
+  font-size: 1.875rem;
   position: relative;
-  right: 15px;
+  right: .9375rem;
 }
 
 .slider__order-link {
   position: relative;
-  left: 13px;
+  left: .8125rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -1086,36 +1086,36 @@ html, body {
 .right-scrol {
   position: relative;
   left: 3%;
-  bottom: 19px;
+  bottom: 1.1875rem;
 }
 
 @media screen and (max-width: 768px) {
   .right-scrol {
     left: -1%;
-    top: -4px;
+    top: -0.25rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .right-scrol {
     left: 4%;
-    top: -125px;
+    top: -7.8125rem;
   }
 }
 
 .icon-scrol__right {
-  width: 25px;
-  height: 27px;
+  width: 1.5625rem;
+  height: 1.6875rem;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
 
 .kkal {
   position: relative;
-  right: 30px;
-  top: 3px;
-  width: 90px;
-  height: 90px;
+  right: 1.875rem;
+  top: .1875rem;
+  width: 5.625rem;
+  height: 5.625rem;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1135,15 +1135,15 @@ html, body {
 @media screen and (max-width: 768px) {
   .kkal {
     position: absolute;
-    top: -60px;
-    right: 78px;
+    top: -3.75rem;
+    right: 4.875rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .kkal {
-    top: -55px;
-    right: -55px;
+    top: -3.4375rem;
+    right: -3.4375rem;
   }
 }
 
@@ -1154,17 +1154,17 @@ html, body {
 .list__burger-compound {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  width: 270px;
+  width: 16.875rem;
   opacity: 0.9;
   background-color: #ffffff;
   font-family: "ubuntubold";
-  font-size: 14px;
-  line-height: 24px;
+  font-size: .875rem;
+  line-height: 1.5rem;
   font-weight: 500;
   color: #2f3234;
   position: absolute;
-  left: 90px;
-  top: -9000px;
+  left: 5.625rem;
+  top: -562.5rem;
 }
 
 .list__burger-compound span {
@@ -1179,7 +1179,7 @@ html, body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .item__compound-beef {
@@ -1207,8 +1207,8 @@ html, body {
 }
 
 .icon-compound {
-  width: 44px;
-  height: 39px;
+  width: 2.75rem;
+  height: 2.4375rem;
 }
 
 .section__four {

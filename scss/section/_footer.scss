@@ -1,6 +1,6 @@
 .footer{
-    // height: 60px;
-    padding: 10px;
+    // height: 3.75rem;
+    padding: .625rem;
     width: 100%;
     margin: 0 auto;
     background: #000;
@@ -11,23 +11,23 @@
     @include phones{
         height: auto;
         padding: 0;
-        min-height: 100px;
+        min-height: 6.25rem;
         // position: relative;
-        // top: 0px;
+        // top: 0rem;
         z-index: 10;
     }
 }
 .container__footer{
     margin: 0 auto;
-    // max-height: 60px;
-    max-width: 940px;
-    width: 940px;
+    // max-height: 3.75rem;
+    max-width: 58.75rem;
+    width: 58.75rem;
     display: flex;
 
     @include phones{
         flex-direction: column;
-        // height:100px;
-        bottom: 100px;
+        // height:6.25rem;
+        bottom: 6.25rem;
         right: 0;
         left: 0;
        
@@ -37,16 +37,16 @@
 .footer__text{
     width: 50%;
     font-family: "Ubuntu";
-font-size: 14px;
-line-height: 24px;
+font-size: .875rem;
+line-height: 1.5rem;
 font-weight: 300;
 color: #fff;
-padding-bottom: 10px;
+padding-bottom: .625rem;
 
 @include phones{
     width: 100%;
     text-align: center;
-    padding-top:10px;
+    padding-top:.625rem;
     padding-bottom: 0;
 }
 
@@ -61,7 +61,7 @@ a{
 
     @include phones{
         width: 100%;
-        padding-top: 8px;
+        padding-top: .5rem;
     //   text-align: center;
     }
 }
@@ -71,20 +71,20 @@ a{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 16px;
-    padding-bottom: 9px;
+    gap: 1rem;
+    padding-bottom: .5625rem;
 
     @include phones{
         justify-content: center;
     }
 }
 // .footer__item{
-//     // width: 10px;
-//     // height: 10px;
+//     // width: .625rem;
+//     // height: .625rem;
     
 // }
 .icon-social{
-    width: 23px;
-    height: 20px;
+    width: 1.4375rem;
+    height: 1.25rem;
 fill: #595959;
 }

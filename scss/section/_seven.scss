@@ -11,9 +11,9 @@
 .container__seven .section__title--black {
     @include phones {
         text-align: center;
-        padding: 0 35px;
+        padding: 0 2.1875rem;
         position: relative;
-        top: -57px;
+        top: -3.5625rem;
     }
 }
 .container__seven {
