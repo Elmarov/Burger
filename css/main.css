@@ -212,7 +212,8 @@ html, body {
 }
 
 .header {
-  width: 100%;
+  width: 100vw;
+  min-width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,6 +232,12 @@ html, body {
 
 .header__menu {
   padding-right: 0.5rem;
+}
+
+@media screen and (max-width: 860px) {
+  .header__menu {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
