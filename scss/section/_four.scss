@@ -29,6 +29,8 @@
     justify-content: center;
     align-items: flex-end;
     // margin-bottom: 3.125rem;
+
+   
     @include tablets{
 height: 38%;
 position: relative;
@@ -42,6 +44,11 @@ left: 1.875rem;
     font-weight: 400;
     right: 5.1875rem;
     top: .3125rem;
+
+    @media screen and (max-width:935px) {
+        right:0px;
+        
+    }
 
     @include tablets{
         right: 0;
