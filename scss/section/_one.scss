@@ -36,9 +36,9 @@
     padding-right: 0.5rem;
 
 
-    @media screen and(max-width:53.75rem){
-        display: none;
-    }
+    // @media screen and(max-width:53.75rem){
+     
+    // }
     @include tablets {
         display: none;
     }
@@ -66,6 +66,13 @@
     }
     &:last-child:after {
         display: none;
+    }
+    @media screen and(max-width:53.75rem){
+        
+        &::after{
+            display: none;
+        }
+        margin-left: 15px;
     }
 }
 .nav__linck {

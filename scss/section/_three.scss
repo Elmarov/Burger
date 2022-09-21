@@ -203,6 +203,7 @@
     }
     @include phones {
         position: relative;
+        // justify-content: space-between;
     }
 }
 
@@ -255,9 +256,12 @@
 
     @include phones {
         font-size: 3.125rem;
-        top: 1%;
+        top: 5%;
         margin: 0 auto;
         padding-top: .625rem;
+        width: 100%;
+        display: flex;
+        
     }
 
     span {

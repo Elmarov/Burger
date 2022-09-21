@@ -55,3 +55,29 @@ let rig = document.querySelector('.right-scrol');
 }
 
 slider();
+
+
+
+function test() {
+
+    const test = document.querySelector('.btn-test');
+    const rezult = document.querySelector('.rezult');
+    
+
+    test.addEventListener('click',function () {
+        
+        const xhr = new XMLHttpRequest();
+xhr.open('GET', 'fren.json');
+xhr.send();
+xhr.addEventListener('load',()=>{
+
+    if(xhr.status >= 400){
+        console.log("lohan");
+    } else{
+        rezult.innerText = xhr.responseText;
+    }
+    console.log('hihih');
+})
+    })
+}
+test();
