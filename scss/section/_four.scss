@@ -2,6 +2,7 @@
     background: url(../img/bg/bg__four.jpg) center no-repeat;
     background-size: cover;
     display: flex;
+    height: auto;
 }
 .container__four {
     // height: 100%;
@@ -70,7 +71,7 @@ left: 1.875rem;
 .item__coment {
     display: flex;
     flex-direction: column;
-
+    width: max-content;
     align-items: flex-start;
     @include tablets{
         align-items: center;
@@ -104,12 +105,13 @@ left: 1.875rem;
 .four__coment {
     display: flex;
   height: 0;
+  width: 0;
   overflow: hidden;
 }
 
 .item__coment--activ {
     // margin-bottom: ;
-    
+    width: auto;
 
     @include tablets{
         height: 40vh;
@@ -126,6 +128,7 @@ left: 1.875rem;
         gap: .625rem;
         // overflow:auto;
         height: 100%;
+        width: auto;
         // border: .0625rem solid blue;
         margin-bottom: 1.25rem;
 
@@ -137,18 +140,18 @@ left: 1.875rem;
         }
 
         .four__coment-img {
+
             display: block;
-            // position: relative;
-            width: 100%;
+            position: relative;
+            width: 35%;
             height: 100%;
+            // display: block;
+            // position: relative;
+            // width: 35%;
+            // height: 100%;
 
             
-            // left: .5rem;
-            // top: .4375rem;
-            // border: .0625rem solid green;
-            // background: url("../img/four/aphex1.png") center center;
-            // background-size: cover;
-            // border-radius: 50%;
+         
 
             @include tablets{
                 width: 100%;
@@ -161,7 +164,7 @@ left: 1.875rem;
             .four__coment-ava{
                 display: block;
                 width: 100%;
-                height: 100%;
+                // height: 100%;
                 object-fit: cover;
                 border-radius: 50%;
                 position: 50%;
@@ -210,6 +213,30 @@ left: 1.875rem;
 
 // }
 
+// .four__coment-img {
+//     display: block;
+//     position: relative;
+//     width: 35%;
+//     height: 100%;
+// }
+
+.four__coment-block{
+    display: block;
+    position: relative;
+}
+
+.four__coment-ava{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
 
 
 

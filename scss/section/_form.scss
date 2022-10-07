@@ -4,6 +4,7 @@
 }
 
 .container__form {
+    max-width: 58.75rem;
     // border: .0625rem solid red;
     justify-content: start;
     gap: 9.375rem;
@@ -256,8 +257,10 @@
 // .order-link {
 // }
 .order-link--reset {
+    @extend %order-link;
     background: transparent;
     text-transform: capitalize;
+
 }
 
 .bloks-radio {

@@ -11,6 +11,7 @@
 }
 .container__three {
     // background: green;
+    max-width: 940px;
     margin: 0 auto;
     height: 100%;
 
@@ -80,7 +81,7 @@
     }
 
     @include phones {
-        top: -2.9375rem;
+        top: -4.9375rem;
         left: -1.625rem;
     }
 
@@ -178,7 +179,7 @@
 }
 .three__text {
     width: 50%;
-    height: 100%;
+    min-height: 100%;
     // border: .0625rem solid blue;
     @include tablets {
         width: 100%;
@@ -329,7 +330,7 @@
         right: 4.875rem;
     }
     @include phones {
-        top: -3.4375rem;
+        top: -5.1375rem;
         right: -3.4375rem;
     }
 

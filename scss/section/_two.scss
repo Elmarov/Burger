@@ -8,6 +8,7 @@
 
 .two__container {
     position: relative;
+    max-width: 58.75rem;
     // top: -1.25rem;
     gap: 3.125rem;
     @include tablets{
